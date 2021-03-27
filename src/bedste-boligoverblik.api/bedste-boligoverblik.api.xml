@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>bedste-boligoverblik.api</name>
+    </assembly>
+    <members>
+        <member name="M:bedste_boligoverblik.api.Controllers.ProduktController.Get">
+            <summary>
+                Henter produkter der kan beregnes på
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.WeatherForecastController.Get">
+            <summary>
+                Dette er en test
+            </summary>
+            <returns>
+                Temperatur
+            </returns>
+        </member>
+    </members>
+</doc>

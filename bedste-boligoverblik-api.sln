@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{545A1BAF-9B45-44D6-9CE9-A66A207BF920}"
+	ProjectSection(SolutionItems) = preProject
+		docs\readme.md = docs\readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{974FB96F-9D63-4893-9872-6175D559CBE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{B4340F1E-AFDE-4AC5-A00E-40D406C5003B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.api", "src\bedste-boligoverblik.api\bedste-boligoverblik.api.csproj", "{E22FDEDC-CB84-477B-92F0-844356A2948C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.core", "src\bedste-boligoverblik.core\bedste-boligoverblik.core.csproj", "{08D07A15-FA2B-4A6E-A932-408EA494E9AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.domain", "src\bedste-boligoverblik.domain\bedste-boligoverblik.domain.csproj", "{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.proxy", "src\bedste-boligoverblik.proxy\bedste-boligoverblik.proxy.csproj", "{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E22FDEDC-CB84-477B-92F0-844356A2948C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E22FDEDC-CB84-477B-92F0-844356A2948C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E22FDEDC-CB84-477B-92F0-844356A2948C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E22FDEDC-CB84-477B-92F0-844356A2948C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08D07A15-FA2B-4A6E-A932-408EA494E9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08D07A15-FA2B-4A6E-A932-408EA494E9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08D07A15-FA2B-4A6E-A932-408EA494E9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08D07A15-FA2B-4A6E-A932-408EA494E9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E22FDEDC-CB84-477B-92F0-844356A2948C} = {974FB96F-9D63-4893-9872-6175D559CBE5}
+		{08D07A15-FA2B-4A6E-A932-408EA494E9AF} = {974FB96F-9D63-4893-9872-6175D559CBE5}
+		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE} = {974FB96F-9D63-4893-9872-6175D559CBE5}
+		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6} = {974FB96F-9D63-4893-9872-6175D559CBE5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AFB2386-39CB-4912-9DB0-071D2C762C93}
+	EndGlobalSection
+EndGlobal
