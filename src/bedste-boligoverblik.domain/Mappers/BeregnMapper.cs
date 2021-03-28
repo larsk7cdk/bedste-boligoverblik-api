@@ -11,28 +11,26 @@ namespace bedste_boligoverblik.domain.Mappers
         public BeregnResult MapToResult(BeregnProxyResponse proxyResponse)
         {
             var realkreditlaan = proxyResponse.Calculations.First().Loans.First();
-
-
             var banklaan = proxyResponse.Calculations.First().Loans.Length > 1
                 ? proxyResponse.Calculations.First().Loans?[1]
                 : null;
 
 
-            var mappedBanklaan = banklaan == null
-                ? null
-                : new Banklaan
-                {
-                    Loebetid = banklaan.LoanPeriod.ToInteger()
-                };
-
-
             return new BeregnResult
             {
-                Realkreditlaan =
+                Realkreditlaan = new Realkreditlaan
                 {
-                    Loebetid = realkreditlaan.LoanPeriod.ToInteger()
+                    Restgaeld = realkreditlaan.LoanPrincipal.ToDecimal(),
+                    Loebetid = realkreditlaan.LoanPeriod.ToInteger(),
+                    MdlYdelseFoerSkat = realkreditlaan.MonthlyPaymentBeforeTax
                 },
-                Banklaan = mappedBanklaan
+                Banklaan = banklaan == null
+                    ? new Banklaan()
+                    : new Banklaan
+                    {
+                        Restgaeld = banklaan.LoanPrincipal.ToDecimal(),
+                        Loebetid = banklaan.LoanPeriod.ToInteger()
+                    }
 
 
                 //Laan = calculations.First().Loans.Select(loan => new BeregnLaan
@@ -67,7 +65,7 @@ namespace bedste_boligoverblik.domain.Mappers
                 //        RenteTillaeg = betaling.AdditionalInterest.ToDecimal(),
                 //        Restgaeld = betaling.LoanPrincipal.ToDecimal()
                 //    })
-                //})
+                // })
             };
         }
 

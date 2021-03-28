@@ -4,6 +4,13 @@
         <name>bedste-boligoverblik.api</name>
     </assembly>
     <members>
+        <member name="M:bedste_boligoverblik.api.Controllers.BeregningController.Beregn(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.IBeregnFacade,bedste_boligoverblik.api.Models.BeregnRequest)">
+            <summary>
+                Laver en beregning
+            </summary>
+            <returns>
+            </returns>
+        </member>
         <member name="M:bedste_boligoverblik.api.Controllers.ProduktController.Get">
             <summary>
                 Henter produkter der kan beregnes på
