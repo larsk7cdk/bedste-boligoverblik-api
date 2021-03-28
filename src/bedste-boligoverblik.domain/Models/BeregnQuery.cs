@@ -2,11 +2,11 @@
 {
     public class BeregnQuery
     {
-        public string Produkt { get; set; }
-        public string Pris { get; set; }
-        public string Udbetaling { get; set; }
-        public string Loebetid { get; set; }
-        public string Afdragsfrihed { get; set; }
-        public string LoebetidBank { get; set; }
+        public string Produkt { get; init; }
+        public string Pris { get; init; }
+        public string Udbetaling { get; init; }
+        public string Loebetid { get; init; }
+        public string Afdragsfrihed { get; init; }
+        public string LoebetidBank { get; init; }
     }
 }

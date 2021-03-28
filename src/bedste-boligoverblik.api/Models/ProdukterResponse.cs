@@ -1,7 +1,9 @@
-﻿namespace bedste_boligoverblik.api.Models
+﻿using System.Collections.Generic;
+
+namespace bedste_boligoverblik.api.Models
 {
-    public class ProdukterResponse
+    public class LaanProdukterResponse
     {
-        public string  Navn { get; set; }
+        public IEnumerable<KeyValuePair<string, string>> LaanProdukter { get; set; }
     }
 }

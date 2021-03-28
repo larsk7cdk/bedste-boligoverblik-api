@@ -12,6 +12,7 @@ namespace bedste_boligoverblik.domain.Configuration
             services.AddSingleton<IBeregnMapper, BeregnMapper>();
 
             services.AddSingleton<IBeregnFacade, BeregnFacade>();
+            services.AddSingleton<ILaanProdukterFacade, LaanProdukterFacade>();
         }
     }
 }

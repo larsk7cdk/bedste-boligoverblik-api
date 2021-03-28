@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.IO;
+using System.Text;
 using System.Threading.Tasks;
 using bedste_boligoverblik.core.Helpers;
 using bedste_boligoverblik.proxy.Models;
@@ -31,6 +32,7 @@ namespace bedste_boligoverblik.proxy.Proxies
             url.Append($"&mortgageProduct={request.Produkt}");
 
             var result = await _httpClientHelper.GetAsync(url.ToString());
+            //var result = await File.ReadAllTextAsync("d:\\temp\\response.json");
 
             return JsonConvert.DeserializeObject<BeregnProxyResponse>(result);
         }

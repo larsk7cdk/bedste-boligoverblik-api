@@ -2,7 +2,6 @@
 {
     public class Realkreditlaan : BasisLaan
     {
-        // public decimal Afdragsfrihed { get; set; }
-        // public Kreditomkostninger Kreditomkostninger { get; set; }
+        public decimal AfdragsfrihedAar { get; init; }
     }
 }

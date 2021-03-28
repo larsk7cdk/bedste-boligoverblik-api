@@ -1,15 +1,19 @@
-﻿namespace bedste_boligoverblik.domain.Models.Laan
+﻿using System.Collections.Generic;
+
+namespace bedste_boligoverblik.domain.Models.Laan
 {
     public class BasisLaan
     {
-        public decimal Restgaeld { get; set; }
-        public int Loebetid { get; set; }
-        public decimal MdlYdelseFoerSkat { get; set; }
-        public decimal MdlYdelseEfterSkat { get; set; }
-        public decimal MdlAfdrag { get; set; }
-        public decimal Tilbagebetaling { get; set; }
-        public decimal AaopFoerSkat { get; set; }
-        public decimal AaopEfterSkat { get; set; }
-        public decimal DebitorRente { get; set; }
+        public decimal Restgaeld { get; init; }
+        public int Loebetid { get; init; }
+        public decimal MdlYdelseFoerSkat { get; init; }
+        public decimal MdlYdelseEfterSkat { get; init; }
+        public decimal MdlAfdrag { get; init; }
+        public decimal Tilbagebetaling { get; init; }
+        public decimal AaopFoerSkatPct { get; init; }
+        public decimal AaopEfterSkatPct { get; init; }
+        public decimal DebitorRentePct { get; init; }
+
+        public IEnumerable<Betaling> Betalinger { get; init; }
     }
 }

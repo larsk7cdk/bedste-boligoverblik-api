@@ -1,4 +1,5 @@
 ﻿using bedste_boligoverblik.api.Models;
+using bedste_boligoverblik.domain.Facades;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,17 +7,18 @@ namespace bedste_boligoverblik.api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Produces("application/json")]
     public class ProduktController : ControllerBase
     {
         /// <summary>
-        ///     Henter produkter der kan beregnes på
+        ///     Henter lånprodukter fra Jyske Bank
         /// </summary>
-        /// <returns></returns>
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ProdukterResponse Get()
-        {
-            return new() {Navn = "F1"};
-        }
+        public LaanProdukterResponse Get([FromServices] ILaanProdukterFacade laanProdukterFacade) =>
+            new()
+            {
+                LaanProdukter = laanProdukterFacade.GetLaanProdukter()
+            };
     }
 }

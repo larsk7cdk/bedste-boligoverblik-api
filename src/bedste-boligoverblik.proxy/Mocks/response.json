@@ -1,0 +1,1093 @@
+{
+    "calculations": [
+        {
+            "loans": [
+                {
+                    "mortgageProduct": "REAL_KREDIT_VARIABEL_RENTE",
+                    "monthlyPaymentBeforeTax": "9498.54",
+                    "annualCostInPercent": "0.7900000000000000771605002114483795594424009323120117187500",
+                    "debtInterestRate": "-0.10255999999999999925531790623267625051084905862808227539062500",
+                    "totalRepayment": "3079390.96999999998661223798990249633789062500",
+                    "creditAmount": "2745970",
+                    "loanPeriod": "30",
+                    "numberOfPayments": "120",
+                    "totalCreditCosts": "333420.970000000000982964820650522597134113311767578125",
+                    "loanPrincipal": "2800000",
+                    "interestOnlyYears": "0",
+                    "monthlyPaymentAfterTax": "9092.07",
+                    "monthlyPrincipalPayment": "7891.92",
+                    "annualCostInPercentAfterTax": "0.619999999999999978211873141731302894186228513717651367187500",
+                    "baseInterestRate": "-0.10300",
+                    "additionalInterestRate": "0.800000000000000016653345369377348106354475021362304687500",
+                    "bondPrice": "105.25700",
+                    "bondPriceDate": "2021-03-28 00:00:00",
+                    "bondsPriceValue": "2800000",
+                    "totalEstablishmentCosts": "54030",
+                    "registrationOfDeedFee": "22660",
+                    "otherTransactionCosts": "20000",
+                    "totalProceeds": "-760",
+                    "loanEstablishmentFee": "11700",
+                    "stateCosts": "42330",
+                    "totalInterestPayment": "279390.970000000000982964820650522597134113311767578125",
+                    "priceLossBonds": "0",
+                    "interestMaxExpireDate": "",
+                    "interestMaxRate": "null",
+                    "paymentRows": [
+                        {
+                            "loanPrincipalDate": "2021-07-01",
+                            "monthlyPaymentBeforeTax": 29518.88000000000101863406598567962646484375,
+                            "monthlyPaymentAfterTax": 28242.610000000000582076609134674072265625,
+                            "principalPayment": 24474.3499999999985448084771633148193359375,
+                            "interest": -742.1399999999999863575794734060764312744140625,
+                            "additionalInterest": 5786.670000000000072759576141834259033203125,
+                            "loanPrincipal": 2775525.6499999999068677425384521484375,
+                            "bondsPriceValue": 2643276.7700000000186264514923095703125
+                        },
+                        {
+                            "loanPrincipalDate": "2021-10-01",
+                            "monthlyPaymentBeforeTax": 28517.7099999999991268850862979888916015625,
+                            "monthlyPaymentAfterTax": 27293.40999999999985448084771633148193359375,
+                            "principalPayment": 23678.580000000001746229827404022216796875,
+                            "interest": -711.9199999999999590727384202182292938232421875,
+                            "additionalInterest": 5551.0500000000001818989403545856475830078125,
+                            "loanPrincipal": 2751847.0699999998323619365692138671875,
+                            "bondsPriceValue": 2627015.1499999999068677425384521484375
+                        },
+                        {
+                            "loanPrincipalDate": "2022-01-01",
+                            "monthlyPaymentBeforeTax": 28470.3499999999985448084771633148193359375,
+                            "monthlyPaymentAfterTax": 27256.5,
+                            "principalPayment": 23672.50999999999839928932487964630126953125,
+                            "interest": -705.8500000000000227373675443232059478759765625,
+                            "additionalInterest": 5503.6899999999995998223312199115753173828125,
+                            "loanPrincipal": 2728174.5600000000558793544769287109375,
+                            "bondsPriceValue": 2610753.5299999997951090335845947265625
+                        },
+                        {
+                            "loanPrincipalDate": "2022-04-01",
+                            "monthlyPaymentBeforeTax": 28423.00999999999839928932487964630126953125,
+                            "monthlyPaymentAfterTax": 27219.5999999999985448084771633148193359375,
+                            "principalPayment": 23666.43999999999869032762944698333740234375,
+                            "interest": -699.779999999999972715158946812152862548828125,
+                            "additionalInterest": 5456.350000000000363797880709171295166015625,
+                            "loanPrincipal": 2704508.120000000111758708953857421875,
+                            "bondsPriceValue": 2594346.200000000186264514923095703125
+                        },
+                        {
+                            "loanPrincipalDate": "2022-07-01",
+                            "monthlyPaymentBeforeTax": 28375.6800000000002910383045673370361328125,
+                            "monthlyPaymentAfterTax": 27182.7099999999991268850862979888916015625,
+                            "principalPayment": 23660.36999999999898136593401432037353515625,
+                            "interest": -693.7100000000000363797880709171295166015625,
+                            "additionalInterest": 5409.02000000000043655745685100555419921875,
+                            "loanPrincipal": 2680847.75,
+                            "bondsPriceValue": 2577847.6400000001303851604461669921875
+                        },
+                        {
+                            "loanPrincipalDate": "2022-10-01",
+                            "monthlyPaymentBeforeTax": 28328.360000000000582076609134674072265625,
+                            "monthlyPaymentAfterTax": 27145.8199999999997089616954326629638671875,
+                            "principalPayment": 23654.29999999999927240423858165740966796875,
+                            "interest": -687.6399999999999863575794734060764312744140625,
+                            "additionalInterest": 5361.6999999999998181010596454143524169921875,
+                            "loanPrincipal": 2657193.450000000186264514923095703125,
+                            "bondsPriceValue": 2561420.1400000001303851604461669921875
+                        },
+                        {
+                            "loanPrincipalDate": "2023-01-01",
+                            "monthlyPaymentBeforeTax": 28281.04999999999927240423858165740966796875,
+                            "monthlyPaymentAfterTax": 27108.95000000000072759576141834259033203125,
+                            "principalPayment": 23648.22999999999956344254314899444580078125,
+                            "interest": -681.5700000000000500222085975110530853271484375,
+                            "additionalInterest": 5314.3900000000003274180926382541656494140625,
+                            "loanPrincipal": 2633545.2200000002048909664154052734375,
+                            "bondsPriceValue": 2544992.6400000001303851604461669921875
+                        },
+                        {
+                            "loanPrincipalDate": "2023-04-01",
+                            "monthlyPaymentBeforeTax": 28233.75,
+                            "monthlyPaymentAfterTax": 27072.080000000001746229827404022216796875,
+                            "principalPayment": 23642.15999999999985448084771633148193359375,
+                            "interest": -675.5,
+                            "additionalInterest": 5267.09000000000014551915228366851806640625,
+                            "loanPrincipal": 2609903.0600000000558793544769287109375,
+                            "bondsPriceValue": 2528423.0299999997951090335845947265625
+                        },
+                        {
+                            "loanPrincipalDate": "2023-07-01",
+                            "monthlyPaymentBeforeTax": 28186.47000000000116415321826934814453125,
+                            "monthlyPaymentAfterTax": 27035.22999999999956344254314899444580078125,
+                            "principalPayment": 23636.0999999999985448084771633148193359375,
+                            "interest": -669.44000000000005456968210637569427490234375,
+                            "additionalInterest": 5219.8100000000004001776687800884246826171875,
+                            "loanPrincipal": 2586266.959999999962747097015380859375,
+                            "bondsPriceValue": 2511742.8900000001303851604461669921875
+                        },
+                        {
+                            "loanPrincipalDate": "2023-10-01",
+                            "monthlyPaymentBeforeTax": 28139.18999999999869032762944698333740234375,
+                            "monthlyPaymentAfterTax": 26998.38000000000101863406598567962646484375,
+                            "principalPayment": 23630.0400000000008731149137020111083984375,
+                            "interest": -663.3799999999999954525264911353588104248046875,
+                            "additionalInterest": 5172.5299999999997453414835035800933837890625,
+                            "loanPrincipal": 2562636.91999999992549419403076171875,
+                            "bondsPriceValue": 2495131.83000000007450580596923828125
+                        },
+                        {
+                            "loanPrincipalDate": "2024-01-01",
+                            "monthlyPaymentBeforeTax": 28091.9300000000002910383045673370361328125,
+                            "monthlyPaymentAfterTax": 26961.5400000000008731149137020111083984375,
+                            "principalPayment": 23623.97999999999956344254314899444580078125,
+                            "interest": -657.3200000000000500222085975110530853271484375,
+                            "additionalInterest": 5125.27000000000043655745685100555419921875,
+                            "loanPrincipal": 2539012.9399999999441206455230712890625,
+                            "bondsPriceValue": 2478520.7700000000186264514923095703125
+                        },
+                        {
+                            "loanPrincipalDate": "2024-04-01",
+                            "monthlyPaymentBeforeTax": 28044.68999999999869032762944698333740234375,
+                            "monthlyPaymentAfterTax": 26924.72000000000116415321826934814453125,
+                            "principalPayment": 23617.919999999998253770172595977783203125,
+                            "interest": -651.259999999999990905052982270717620849609375,
+                            "additionalInterest": 5078.0299999999997453414835035800933837890625,
+                            "loanPrincipal": 2515395.0200000000186264514923095703125,
+                            "bondsPriceValue": 2461840.629999999888241291046142578125
+                        },
+                        {
+                            "loanPrincipalDate": "2024-07-01",
+                            "monthlyPaymentBeforeTax": 27997.45000000000072759576141834259033203125,
+                            "monthlyPaymentAfterTax": 26887.9000000000014551915228366851806640625,
+                            "principalPayment": 23611.860000000000582076609134674072265625,
+                            "interest": -645.200000000000045474735088646411895751953125,
+                            "additionalInterest": 5030.7899999999999636202119290828704833984375,
+                            "loanPrincipal": 2491783.1600000001490116119384765625,
+                            "bondsPriceValue": 2445011.709999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2024-10-01",
+                            "monthlyPaymentBeforeTax": 27950.22999999999956344254314899444580078125,
+                            "monthlyPaymentAfterTax": 26851.09000000000014551915228366851806640625,
+                            "principalPayment": 23605.79999999999927240423858165740966796875,
+                            "interest": -639.1399999999999863575794734060764312744140625,
+                            "additionalInterest": 4983.5699999999997089616954326629638671875,
+                            "loanPrincipal": 2468177.3599999998696148395538330078125,
+                            "bondsPriceValue": 2428250.2299999999813735485076904296875
+                        },
+                        {
+                            "loanPrincipalDate": "2025",
+                            "monthlyPaymentBeforeTax": 111328.90999999999985448084771633148193359375,
+                            "monthlyPaymentAfterTax": 107036.46000000000276486389338970184326171875,
+                            "principalPayment": 94362.66999999999825377017259597778320312500,
+                            "interest": -2496.0299999999999727151589468121528625488281250,
+                            "additionalInterest": 19462.2700000000004365574568510055541992187500,
+                            "loanPrincipal": 2373814.6899999999441206455230712890625,
+                            "bondsPriceValue": 2360664.8399999998509883880615234375
+                        },
+                        {
+                            "loanPrincipalDate": "2026",
+                            "monthlyPaymentBeforeTax": 110342.47000000000116415321826934814453125000,
+                            "monthlyPaymentAfterTax": 106333.03999999999723513610661029815673828125,
+                            "principalPayment": 94494.9100000000034924596548080444335937500,
+                            "interest": -2859.8700000000000045474735088646411895751953125,
+                            "additionalInterest": 18707.4299999999993815436027944087982177734375,
+                            "loanPrincipal": 2279319.7799999997951090335845947265625,
+                            "bondsPriceValue": 2173659.0699999998323619365692138671875
+                        },
+                        {
+                            "loanPrincipalDate": "2027",
+                            "monthlyPaymentBeforeTax": 109354.11999999999898136593401432037353515625,
+                            "monthlyPaymentAfterTax": 105620.98999999999796273186802864074707031250,
+                            "principalPayment": 94598.65999999999985448084771633148193359375,
+                            "interest": -3195.2200000000000272848410531878471374511718750,
+                            "additionalInterest": 17950.6800000000012005330063402652740478515625,
+                            "loanPrincipal": 2184721.120000000111758708953857421875,
+                            "bondsPriceValue": 2103961.6800000001676380634307861328125
+                        },
+                        {
+                            "loanPrincipalDate": "2028",
+                            "monthlyPaymentBeforeTax": 108597.72999999999956344254314899444580078125,
+                            "monthlyPaymentAfterTax": 105021.89999999999781721271574497222900390625,
+                            "principalPayment": 94464.01999999999679857864975929260253906250,
+                            "interest": -3060.5800000000000409272615797817707061767578125,
+                            "additionalInterest": 17194.2899999999990541255101561546325683593750,
+                            "loanPrincipal": 2090257.1000000000931322574615478515625,
+                            "bondsPriceValue": 2033626.17999999993480741977691650390625
+                        },
+                        {
+                            "loanPrincipalDate": "2029",
+                            "monthlyPaymentBeforeTax": 107842.40999999999621650204062461853027343750,
+                            "monthlyPaymentAfterTax": 104423.67000000000189174897968769073486328125,
+                            "principalPayment": 94329.56999999999970896169543266296386718750,
+                            "interest": -2926.1300000000001091393642127513885498046875000,
+                            "additionalInterest": 16438.96999999999979991116560995578765869140625,
+                            "loanPrincipal": 1995927.53000000002793967723846435546875,
+                            "bondsPriceValue": 1962557.75
+                        },
+                        {
+                            "loanPrincipalDate": "2030",
+                            "monthlyPaymentBeforeTax": 107088.20000000000436557456851005554199218750,
+                            "monthlyPaymentAfterTax": 103826.30999999999767169356346130371093750000,
+                            "principalPayment": 94195.32999999999810825102031230926513671875,
+                            "interest": -2791.8899999999998726707417517900466918945312500,
+                            "additionalInterest": 15684.76000000000021827872842550277709960937500,
+                            "loanPrincipal": 1901732.19999999995343387126922607421875,
+                            "bondsPriceValue": 1890778.63999999989755451679229736328125
+                        },
+                        {
+                            "loanPrincipalDate": "2031",
+                            "monthlyPaymentBeforeTax": 106317.86999999999898136593401432037353515625,
+                            "monthlyPaymentAfterTax": 103221.18000000000392901711165904998779296875,
+                            "principalPayment": 94078.02999999999883584678173065185546875000,
+                            "interest": -2691.7300000000000181898940354585647583007812500,
+                            "additionalInterest": 14931.5699999999997089616954326629638671875000,
+                            "loanPrincipal": 1807654.16999999992549419403076171875,
+                            "bondsPriceValue": 1725235.290000000037252902984619140625
+                        },
+                        {
+                            "loanPrincipalDate": "2032",
+                            "monthlyPaymentBeforeTax": 105548.43999999999869032762944698333740234375,
+                            "monthlyPaymentAfterTax": 102616.13999999999941792339086532592773437500,
+                            "principalPayment": 93958.29999999999927240423858165740966796875,
+                            "interest": -2589.1399999999999863575794734060764312744140625,
+                            "additionalInterest": 14179.28000000000020008883439004421234130859375,
+                            "loanPrincipal": 1713695.870000000111758708953857421875,
+                            "bondsPriceValue": 1651141.629999999888241291046142578125
+                        },
+                        {
+                            "loanPrincipalDate": "2033",
+                            "monthlyPaymentBeforeTax": 104797.1800000000002910383045673370361328125,
+                            "monthlyPaymentAfterTax": 102020.24000000000160071067512035369873046875,
+                            "principalPayment": 93821.11000000000422005541622638702392578125,
+                            "interest": -2451.9500000000000454747350886464118957519531250,
+                            "additionalInterest": 13428.01999999999998181010596454143524169921875,
+                            "loanPrincipal": 1619874.76000000000931322574615478515625,
+                            "bondsPriceValue": 1576282.63999999989755451679229736328125
+                        },
+                        {
+                            "loanPrincipalDate": "2034",
+                            "monthlyPaymentBeforeTax": 104047.02000000000043655745685100555419921875,
+                            "monthlyPaymentAfterTax": 101425.22000000000116415321826934814453125000,
+                            "principalPayment": 93684.13999999999941792339086532592773437500,
+                            "interest": -2314.9800000000000181898940354585647583007812500,
+                            "additionalInterest": 12677.86000000000012732925824820995330810546875,
+                            "loanPrincipal": 1526190.620000000111758708953857421875,
+                            "bondsPriceValue": 1500675.0600000000558793544769287109375
+                        },
+                        {
+                            "loanPrincipalDate": "2035",
+                            "monthlyPaymentBeforeTax": 103297.94999999999708961695432662963867187500,
+                            "monthlyPaymentAfterTax": 100831.05000000000291038304567337036132812500,
+                            "principalPayment": 93547.3600000000005820766091346740722656250,
+                            "interest": -2178.2000000000000454747350886464118957519531250,
+                            "additionalInterest": 11928.79000000000041836756281554698944091796875,
+                            "loanPrincipal": 1432643.26000000000931322574615478515625,
+                            "bondsPriceValue": 1424291.3500000000931322574615478515625
+                        },
+                        {
+                            "loanPrincipalDate": "2036",
+                            "monthlyPaymentBeforeTax": 102526.88999999999941792339086532592773437500,
+                            "monthlyPaymentAfterTax": 100226.1500000000014551915228366851806640625,
+                            "principalPayment": 93433.04999999999927240423858165740966796875,
+                            "interest": -2086.9700000000000272848410531878471374511718750,
+                            "additionalInterest": 11180.80999999999994543031789362430572509765625,
+                            "loanPrincipal": 1339210.209999999962747097015380859375,
+                            "bondsPriceValue": 1279924.57000000006519258022308349609375
+                        },
+                        {
+                            "loanPrincipalDate": "2037",
+                            "monthlyPaymentBeforeTax": 101756.64999999999781721271574497222900390625,
+                            "monthlyPaymentAfterTax": 99620.72999999999956344254314899444580078125,
+                            "principalPayment": 93314.27000000000043655745685100555419921875,
+                            "interest": -1991.26999999999998181010596454143524169921875000,
+                            "additionalInterest": 10433.65000000000009094947017729282379150390625,
+                            "loanPrincipal": 1245895.9399999999441206455230712890625,
+                            "bondsPriceValue": 1201399.57000000006519258022308349609375
+                        },
+                        {
+                            "loanPrincipalDate": "2038",
+                            "monthlyPaymentBeforeTax": 101010.56000000000130967237055301666259765625,
+                            "monthlyPaymentAfterTax": 99027.37000000000261934474110603332519531250,
+                            "principalPayment": 93171.87000000000261934474110603332519531250,
+                            "interest": -1848.87000000000000454747350886464118957519531250,
+                            "additionalInterest": 9687.55999999999994543031789362430572509765625,
+                            "loanPrincipal": 1152724.07000000006519258022308349609375,
+                            "bondsPriceValue": 1122089.32000000006519258022308349609375
+                        },
+                        {
+                            "loanPrincipalDate": "2039",
+                            "monthlyPaymentBeforeTax": 100265.62000000000261934474110603332519531250,
+                            "monthlyPaymentAfterTax": 98434.93000000000392901711165904998779296875,
+                            "principalPayment": 93029.69000000000232830643653869628906250000,
+                            "interest": -1706.6900000000000545696821063756942749023437500,
+                            "additionalInterest": 8942.6199999999998908606357872486114501953125,
+                            "loanPrincipal": 1059694.379999999888241291046142578125,
+                            "bondsPriceValue": 1041971.140000000013969838619232177734375
+                        },
+                        {
+                            "loanPrincipalDate": "2040",
+                            "monthlyPaymentBeforeTax": 99521.809999999997671693563461303710937500,
+                            "monthlyPaymentAfterTax": 97843.38999999999941792339086532592773437500,
+                            "principalPayment": 92887.75000000000000000000000000000000000000,
+                            "interest": -1564.7500000000000000000000000000000000000000000,
+                            "additionalInterest": 8198.809999999999945430317893624305725097656250,
+                            "loanPrincipal": 966806.630000000004656612873077392578125,
+                            "bondsPriceValue": 961081.579999999958090484142303466796875
+                        },
+                        {
+                            "loanPrincipalDate": "2041",
+                            "monthlyPaymentBeforeTax": 98743.2799999999988358467817306518554687500,
+                            "monthlyPaymentAfterTax": 97234.46999999999752617441117763519287109375,
+                            "principalPayment": 92779.61999999999898136593401432037353515625,
+                            "interest": -1492.42000000000001591615728102624416351318359375,
+                            "additionalInterest": 7456.079999999999927240423858165740966796875000,
+                            "loanPrincipal": 874027.01000000000931322574615478515625,
+                            "bondsPriceValue": 837696.28000000002793967723846435546875
+                        },
+                        {
+                            "loanPrincipalDate": "2042",
+                            "monthlyPaymentBeforeTax": 97965.52000000000407453626394271850585937500,
+                            "monthlyPaymentAfterTax": 96623.47000000000116415321826934814453125000,
+                            "principalPayment": 92661.02999999999519786797463893890380859375,
+                            "interest": -1409.62999999999999545252649113535881042480468750,
+                            "additionalInterest": 6714.119999999999890860635787248611450195312500,
+                            "loanPrincipal": 781365.9799999999813735485076904296875,
+                            "bondsPriceValue": 754820.589999999967403709888458251953125
+                        },
+                        {
+                            "loanPrincipalDate": "2043",
+                            "monthlyPaymentBeforeTax": 97224.71000000000276486389338970184326171875,
+                            "monthlyPaymentAfterTax": 96030.75999999999839928932487964630126953125,
+                            "principalPayment": 92505.51000000000203726813197135925292968750,
+                            "interest": -1254.11000000000001364242052659392356872558593750,
+                            "additionalInterest": 5973.310000000000172803993336856365203857421875,
+                            "loanPrincipal": 688860.46999999997206032276153564453125,
+                            "bondsPriceValue": 671106.369999999995343387126922607421875
+                        },
+                        {
+                            "loanPrincipalDate": "2044",
+                            "monthlyPaymentBeforeTax": 96485.13999999999941792339086532592773437500,
+                            "monthlyPaymentAfterTax": 95439.01000000000203726813197135925292968750,
+                            "principalPayment": 92350.21999999999752617441117763519287109375,
+                            "interest": -1098.82000000000005002220859751105308532714843750,
+                            "additionalInterest": 5233.740000000000009094947017729282379150390625,
+                            "loanPrincipal": 596510.25,
+                            "bondsPriceValue": 586574.650000000023283064365386962890625
+                        },
+                        {
+                            "loanPrincipalDate": "2045",
+                            "monthlyPaymentBeforeTax": 95746.79999999999927240423858165740966796875,
+                            "monthlyPaymentAfterTax": 94848.24000000000160071067512035369873046875,
+                            "principalPayment": 92195.1999999999970896169543266296386718750,
+                            "interest": -943.800000000000011368683772161602973937988281250,
+                            "additionalInterest": 4495.400000000000090949470177292823791503906250,
+                            "loanPrincipal": 504315.0499999999883584678173065185546875,
+                            "bondsPriceValue": 501187.73999999999068677425384521484375
+                        },
+                        {
+                            "loanPrincipalDate": "2046",
+                            "monthlyPaymentBeforeTax": 94921.59999999999854480847716331481933593750,
+                            "monthlyPaymentAfterTax": 94211.93000000000029103830456733703613281250,
+                            "principalPayment": 92116.54999999999927240423858165740966796875,
+                            "interest": -953.169999999999987494447850622236728668212890625,
+                            "additionalInterest": 3758.2200000000000272848410531878471374511718750,
+                            "loanPrincipal": 412198.5,
+                            "bondsPriceValue": 398706.4799999999813735485076904296875
+                        },
+                        {
+                            "loanPrincipalDate": "2047",
+                            "monthlyPaymentBeforeTax": 94096.84000000000014551915228366851806640625,
+                            "monthlyPaymentAfterTax": 93563.1100000000005820766091346740722656250,
+                            "principalPayment": 91987.24000000000160071067512035369873046875,
+                            "interest": -911.880000000000023874235921539366245269775390625,
+                            "additionalInterest": 3021.4800000000000181898940354585647583007812500,
+                            "loanPrincipal": 320211.26000000000931322574615478515625,
+                            "bondsPriceValue": 311612.0599999999976716935634613037109375
+                        },
+                        {
+                            "loanPrincipalDate": "2048",
+                            "monthlyPaymentBeforeTax": 93361.60999999999694409780204296112060546875,
+                            "monthlyPaymentAfterTax": 92957.73999999999796273186802864074707031250,
+                            "principalPayment": 91765.34999999999854480847716331481933593750,
+                            "interest": -689.989999999999980673237587325274944305419921875,
+                            "additionalInterest": 2286.2500000000000000000000000000000000000000000,
+                            "loanPrincipal": 228445.91000000000349245965480804443359375,
+                            "bondsPriceValue": 223656.52999999999883584678173065185546875
+                        },
+                        {
+                            "loanPrincipalDate": "2049",
+                            "monthlyPaymentBeforeTax": 92628.14999999999781721271574497222900390625,
+                            "monthlyPaymentAfterTax": 92353.84999999999854480847716331481933593750,
+                            "principalPayment": 91544.00000000000000000000000000000000000000,
+                            "interest": -468.63999999999998635757947340607643127441406250,
+                            "additionalInterest": 1552.78999999999996362021192908287048339843750000,
+                            "loanPrincipal": 136901.91000000000349245965480804443359375,
+                            "bondsPriceValue": 134816.48999999999068677425384521484375
+                        },
+                        {
+                            "loanPrincipalDate": "2050",
+                            "monthlyPaymentBeforeTax": 92027.25999999999839928932487964630126953125,
+                            "monthlyPaymentAfterTax": 91849.13000000000101863406598567962646484375,
+                            "principalPayment": 91323.17000000000189174897968769073486328125,
+                            "interest": -247.810000000000002273736754432320594787597656250,
+                            "additionalInterest": 951.900000000000005684341886080801486968994140625,
+                            "loanPrincipal": 45578.7399999999979627318680286407470703125,
+                            "bondsPriceValue": 45088.050000000002910383045673370361328125
+                        },
+                        {
+                            "loanPrincipalDate": "2051",
+                            "monthlyPaymentBeforeTax": 45987.47999999999956344254314899444580078125,
+                            "monthlyPaymentAfterTax": 45884.06999999999970896169543266296386718750,
+                            "principalPayment": 45578.7399999999979627318680286407470703125,
+                            "interest": -41.260000000000001563194018672220408916473388671875,
+                            "additionalInterest": 450,
+                            "loanPrincipal": 0,
+                            "bondsPriceValue": 0
+                        }
+                    ]
+                },
+                {
+                    "mortgageProduct": "BANKLOAN",
+                    "monthlyPaymentBeforeTax": "4275.00",
+                    "annualCostInPercent": "7.1300000000000002264854970235319342464208602905273437500",
+                    "debtInterestRate": "6.66000",
+                    "totalRepayment": "1012786.51999999999998181010596454143524169921875",
+                    "creditAmount": "547450",
+                    "loanPeriod": "20",
+                    "numberOfPayments": "238",
+                    "totalCreditCosts": "465336.520000000000376161324311397038400173187255859375",
+                    "loanPrincipal": "568000",
+                    "monthlyPaymentAfterTax": "3504.21",
+                    "monthlyPrincipalPayment": "1228.39",
+                    "annualCostInPercentAfterTax": "5.3699999999999997735145029764680657535791397094726562500",
+                    "baseInterestRate": "6.500000000000000222044604925031308084726333618164062500",
+                    "totalEstablishmentCosts": "20550",
+                    "loanEstablishmentFee": "10520",
+                    "stateCosts": "10030",
+                    "totalInterestPayment": "444786.520000000000376161324311397038400173187255859375",
+                    "paymentRows": [
+                        {
+                            "loanPrincipalDate": "2021-03-31",
+                            "monthlyPaymentBeforeTax": 0,
+                            "monthlyPaymentAfterTax": -51.17999999999999971578290569595992565155029296875,
+                            "principalPayment": -202.30000000000001136868377216160297393798828125,
+                            "interest": 202.30000000000001136868377216160297393798828125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 568202.30000000004656612873077392578125,
+                            "bondsPriceValue": 568202.30000000004656612873077392578125
+                        },
+                        {
+                            "loanPrincipalDate": "2021-05-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 563927.30000000004656612873077392578125,
+                            "bondsPriceValue": 563927.30000000004656612873077392578125
+                        },
+                        {
+                            "loanPrincipalDate": "2021-06-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 1951.160000000000081854523159563541412353515625,
+                            "principalPayment": -4910.149999999999636202119290828704833984375,
+                            "interest": 9185.149999999999636202119290828704833984375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 568837.44999999995343387126922607421875,
+                            "bondsPriceValue": 568837.44999999995343387126922607421875
+                        },
+                        {
+                            "loanPrincipalDate": "2021-07-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 564562.44999999995343387126922607421875,
+                            "bondsPriceValue": 564562.44999999995343387126922607421875
+                        },
+                        {
+                            "loanPrincipalDate": "2021-08-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 560287.44999999995343387126922607421875,
+                            "bondsPriceValue": 560287.44999999995343387126922607421875
+                        },
+                        {
+                            "loanPrincipalDate": "2021-09-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 1934.670000000000072759576141834259033203125,
+                            "principalPayment": -4975.3100000000004001776687800884246826171875,
+                            "interest": 9250.309999999999490682967007160186767578125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 565262.76000000000931322574615478515625,
+                            "bondsPriceValue": 565262.76000000000931322574615478515625
+                        },
+                        {
+                            "loanPrincipalDate": "2021-10-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 560987.76000000000931322574615478515625,
+                            "bondsPriceValue": 560987.76000000000931322574615478515625
+                        },
+                        {
+                            "loanPrincipalDate": "2021-11-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 556712.76000000000931322574615478515625,
+                            "bondsPriceValue": 556712.76000000000931322574615478515625
+                        },
+                        {
+                            "loanPrincipalDate": "2021-12-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 1949.680000000000063664629124104976654052734375,
+                            "principalPayment": -4915.97999999999956344254314899444580078125,
+                            "interest": 9190.97999999999956344254314899444580078125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 561628.73999999999068677425384521484375,
+                            "bondsPriceValue": 561628.73999999999068677425384521484375
+                        },
+                        {
+                            "loanPrincipalDate": "2022-01-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 557353.73999999999068677425384521484375,
+                            "bondsPriceValue": 557353.73999999999068677425384521484375
+                        },
+                        {
+                            "loanPrincipalDate": "2022-02-28",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 553078.73999999999068677425384521484375,
+                            "bondsPriceValue": 553078.73999999999068677425384521484375
+                        },
+                        {
+                            "loanPrincipalDate": "2022-03-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2014.970000000000027284841053187847137451171875,
+                            "principalPayment": -4657.9300000000002910383045673370361328125,
+                            "interest": 8932.9300000000002910383045673370361328125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 557736.670000000041909515857696533203125,
+                            "bondsPriceValue": 557736.670000000041909515857696533203125
+                        },
+                        {
+                            "loanPrincipalDate": "2022-04-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 553461.670000000041909515857696533203125,
+                            "bondsPriceValue": 553461.670000000041909515857696533203125
+                        },
+                        {
+                            "loanPrincipalDate": "2022-05-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 549186.670000000041909515857696533203125,
+                            "bondsPriceValue": 549186.670000000041909515857696533203125
+                        },
+                        {
+                            "loanPrincipalDate": "2022-06-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2005.819999999999936335370875895023345947265625,
+                            "principalPayment": -4694.1099999999996725819073617458343505859375,
+                            "interest": 8969.110000000000582076609134674072265625,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 553880.78000000002793967723846435546875,
+                            "bondsPriceValue": 553880.78000000002793967723846435546875
+                        },
+                        {
+                            "loanPrincipalDate": "2022-07-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 549605.78000000002793967723846435546875,
+                            "bondsPriceValue": 549605.78000000002793967723846435546875
+                        },
+                        {
+                            "loanPrincipalDate": "2022-08-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 545330.78000000002793967723846435546875,
+                            "bondsPriceValue": 545330.78000000002793967723846435546875
+                        },
+                        {
+                            "loanPrincipalDate": "2022-09-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 1996.670000000000072759576141834259033203125,
+                            "principalPayment": -4730.260000000000218278728425502777099609375,
+                            "interest": 9005.260000000000218278728425502777099609375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 550061.040000000037252902984619140625,
+                            "bondsPriceValue": 550061.040000000037252902984619140625
+                        },
+                        {
+                            "loanPrincipalDate": "2022-10-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 545786.040000000037252902984619140625,
+                            "bondsPriceValue": 545786.040000000037252902984619140625
+                        },
+                        {
+                            "loanPrincipalDate": "2022-11-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 541511.040000000037252902984619140625,
+                            "bondsPriceValue": 541511.040000000037252902984619140625
+                        },
+                        {
+                            "loanPrincipalDate": "2022-12-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2012.69000000000005456968210637569427490234375,
+                            "principalPayment": -4666.920000000000072759576141834259033203125,
+                            "interest": 8941.920000000000072759576141834259033203125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 546177.959999999962747097015380859375,
+                            "bondsPriceValue": 546177.959999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2023-01-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 541902.959999999962747097015380859375,
+                            "bondsPriceValue": 541902.959999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2023-02-28",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 537627.959999999962747097015380859375,
+                            "bondsPriceValue": 537627.959999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2023-03-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2077.6199999999998908606357872486114501953125,
+                            "principalPayment": -4410.2899999999999636202119290828704833984375,
+                            "interest": 8685.2900000000008731149137020111083984375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 542038.25,
+                            "bondsPriceValue": 542038.25
+                        },
+                        {
+                            "loanPrincipalDate": "2023-04-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 537763.25,
+                            "bondsPriceValue": 537763.25
+                        },
+                        {
+                            "loanPrincipalDate": "2023-05-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 533488.25,
+                            "bondsPriceValue": 533488.25
+                        },
+                        {
+                            "loanPrincipalDate": "2023-06-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2070.17999999999983629095368087291717529296875,
+                            "principalPayment": -4439.7100000000000363797880709171295166015625,
+                            "interest": 8714.7099999999991268850862979888916015625,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 537927.959999999962747097015380859375,
+                            "bondsPriceValue": 537927.959999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2023-07-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 533652.959999999962747097015380859375,
+                            "bondsPriceValue": 533652.959999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2023-08-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 529377.959999999962747097015380859375,
+                            "bondsPriceValue": 529377.959999999962747097015380859375
+                        },
+                        {
+                            "loanPrincipalDate": "2023-09-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2062.7899999999999636202119290828704833984375,
+                            "principalPayment": -4468.899999999999636202119290828704833984375,
+                            "interest": 8743.899999999999636202119290828704833984375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 533846.859999999986030161380767822265625,
+                            "bondsPriceValue": 533846.859999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2023-10-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 529571.859999999986030161380767822265625,
+                            "bondsPriceValue": 529571.859999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2023-11-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 525296.859999999986030161380767822265625,
+                            "bondsPriceValue": 525296.859999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2023-12-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2079.90000000000009094947017729282379150390625,
+                            "principalPayment": -4401.27000000000043655745685100555419921875,
+                            "interest": 8676.27000000000043655745685100555419921875,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 529698.130000000004656612873077392578125,
+                            "bondsPriceValue": 529698.130000000004656612873077392578125
+                        },
+                        {
+                            "loanPrincipalDate": "2024-01-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 525423.130000000004656612873077392578125,
+                            "bondsPriceValue": 525423.130000000004656612873077392578125
+                        },
+                        {
+                            "loanPrincipalDate": "2024-02-29",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 521148.130000000004656612873077392578125,
+                            "bondsPriceValue": 521148.130000000004656612873077392578125
+                        },
+                        {
+                            "loanPrincipalDate": "2024-03-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2126.59000000000014551915228366851806640625,
+                            "principalPayment": -4216.72999999999956344254314899444580078125,
+                            "interest": 8491.72999999999956344254314899444580078125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 525364.859999999986030161380767822265625,
+                            "bondsPriceValue": 525364.859999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2024-04-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 521089.859999999986030161380767822265625,
+                            "bondsPriceValue": 521089.859999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2024-05-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 516814.859999999986030161380767822265625,
+                            "bondsPriceValue": 516814.859999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2024-06-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2144.3800000000001091393642127513885498046875,
+                            "principalPayment": -4146.4399999999995998223312199115753173828125,
+                            "interest": 8421.440000000000509317032992839813232421875,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 520961.2999999999883584678173065185546875,
+                            "bondsPriceValue": 520961.2999999999883584678173065185546875
+                        },
+                        {
+                            "loanPrincipalDate": "2024-07-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 516686.2999999999883584678173065185546875,
+                            "bondsPriceValue": 516686.2999999999883584678173065185546875
+                        },
+                        {
+                            "loanPrincipalDate": "2024-08-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 512411.2999999999883584678173065185546875,
+                            "bondsPriceValue": 512411.2999999999883584678173065185546875
+                        },
+                        {
+                            "loanPrincipalDate": "2024-09-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2138.96999999999979991116560995578765869140625,
+                            "principalPayment": -4167.7899999999999636202119290828704833984375,
+                            "interest": 8442.7900000000008731149137020111083984375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 516579.0900000000256113708019256591796875,
+                            "bondsPriceValue": 516579.0900000000256113708019256591796875
+                        },
+                        {
+                            "loanPrincipalDate": "2024-10-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 512304.0900000000256113708019256591796875,
+                            "bondsPriceValue": 512304.0900000000256113708019256591796875
+                        },
+                        {
+                            "loanPrincipalDate": "2024-11-30",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 4275,
+                            "principalPayment": 4275,
+                            "interest": 0,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 508029.0900000000256113708019256591796875,
+                            "bondsPriceValue": 508029.0900000000256113708019256591796875
+                        },
+                        {
+                            "loanPrincipalDate": "2024-12-31",
+                            "monthlyPaymentBeforeTax": 4275,
+                            "monthlyPaymentAfterTax": 2157.28000000000020008883439004421234130859375,
+                            "principalPayment": -4095.42999999999983629095368087291717529296875,
+                            "interest": 8370.4300000000002910383045673370361328125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 512124.5200000000186264514923095703125,
+                            "bondsPriceValue": 512124.5200000000186264514923095703125
+                        },
+                        {
+                            "loanPrincipalDate": "2025",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 43064.37000000000034560798667371273040771484375,
+                            "principalPayment": 18748.08999999999969077180139720439910888671875,
+                            "interest": 32551.9100000000007639755494892597198486328125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 493376.4299999999930150806903839111328125,
+                            "bondsPriceValue": 493376.4299999999930150806903839111328125
+                        },
+                        {
+                            "loanPrincipalDate": "2026",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 43380.21000000000003637978807091712951660156250,
+                            "principalPayment": 19996.50000000000000000000000000000000000000000,
+                            "interest": 31303.5000000000000000000000000000000000000000,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 473379.9299999999930150806903839111328125,
+                            "bondsPriceValue": 473379.9299999999930150806903839111328125
+                        },
+                        {
+                            "loanPrincipalDate": "2027",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 43717.14999999999963620211929082870483398437500,
+                            "principalPayment": 21328.28999999999996362021192908287048339843750,
+                            "interest": 29971.7099999999991268850862979888916015625000,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 452051.640000000013969838619232177734375,
+                            "bondsPriceValue": 452051.640000000013969838619232177734375
+                        },
+                        {
+                            "loanPrincipalDate": "2028",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 44075.58999999999969077180139720439910888671875,
+                            "principalPayment": 22745.0299999999997453414835035800933837890625,
+                            "interest": 28554.9700000000002546585164964199066162109375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 429306.609999999986030161380767822265625,
+                            "bondsPriceValue": 429306.609999999986030161380767822265625
+                        },
+                        {
+                            "loanPrincipalDate": "2029",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 44459.86000000000012732925824820995330810546875,
+                            "principalPayment": 24263.86000000000012732925824820995330810546875,
+                            "interest": 27036.1399999999994179233908653259277343750000,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 405042.75,
+                            "bondsPriceValue": 405042.75
+                        },
+                        {
+                            "loanPrincipalDate": "2030",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 44868.65000000000009094947017729282379150390625,
+                            "principalPayment": 25879.65000000000009094947017729282379150390625,
+                            "interest": 25420.3500000000003637978807091712951660156250,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 379163.099999999976716935634613037109375,
+                            "bondsPriceValue": 379163.099999999976716935634613037109375
+                        },
+                        {
+                            "loanPrincipalDate": "2031",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 45304.71999999999979991116560995578765869140625,
+                            "principalPayment": 27603.269999999999981810105964541435241699218750,
+                            "interest": 23696.7299999999986539478413760662078857421875,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 351559.8300000000162981450557708740234375,
+                            "bondsPriceValue": 351559.8300000000162981450557708740234375
+                        },
+                        {
+                            "loanPrincipalDate": "2032",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 45768.91000000000030922819860279560089111328125,
+                            "principalPayment": 29437.999999999999772626324556767940521240234375,
+                            "interest": 21862.0000000000000000000000000000000000000000,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 322121.8300000000162981450557708740234375,
+                            "bondsPriceValue": 322121.8300000000162981450557708740234375
+                        },
+                        {
+                            "loanPrincipalDate": "2033",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 46265.92000000000052750692702829837799072265625,
+                            "principalPayment": 31402.4800000000000181898940354585647583007812500,
+                            "interest": 19897.5200000000004365574568510055541992187500,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 290719.349999999976716935634613037109375,
+                            "bondsPriceValue": 290719.349999999976716935634613037109375
+                        },
+                        {
+                            "loanPrincipalDate": "2034",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 46795.03000000000020008883439004421234130859375,
+                            "principalPayment": 33493.770000000000006679101716144941747188568115234375,
+                            "interest": 17806.2299999999995634425431489944458007812500,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 257225.57999999998719431459903717041015625,
+                            "bondsPriceValue": 257225.57999999998719431459903717041015625
+                        },
+                        {
+                            "loanPrincipalDate": "2035",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 47359.40000000000009094947017729282379150390625,
+                            "principalPayment": 35724.50000000000005684341886080801486968994140625,
+                            "interest": 15575.50000000000045474735088646411895751953125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 221501.07999999998719431459903717041015625,
+                            "bondsPriceValue": 221501.07999999998719431459903717041015625
+                        },
+                        {
+                            "loanPrincipalDate": "2036",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 47960.44999999999981810105964541435241699218750,
+                            "principalPayment": 38100.1899999999999408828443847596645355224609375,
+                            "interest": 13199.80999999999949068296700716018676757812500,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 183400.890000000013969838619232177734375,
+                            "bondsPriceValue": 183400.890000000013969838619232177734375
+                        },
+                        {
+                            "loanPrincipalDate": "2037",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 48603.38999999999987267074175179004669189453125,
+                            "principalPayment": 40641.440000000000054569682106375694274902343750,
+                            "interest": 10658.56000000000040017766878008842468261718750,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 142759.4500000000116415321826934814453125,
+                            "bondsPriceValue": 142759.4500000000116415321826934814453125
+                        },
+                        {
+                            "loanPrincipalDate": "2038",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 49288.16999999999961801222525537014007568359375,
+                            "principalPayment": 43348.11999999999943611328490078449249267578125,
+                            "interest": 7951.880000000000336513039655983448028564453125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 99411.330000000001746229827404022216796875,
+                            "bondsPriceValue": 99411.330000000001746229827404022216796875
+                        },
+                        {
+                            "loanPrincipalDate": "2039",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 50018.59999999999990905052982270717620849609375,
+                            "principalPayment": 46235.18000000000029103830456733703613281250000,
+                            "interest": 5064.819999999999936335370875895023345947265625,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 53176.1500000000014551915228366851806640625,
+                            "bondsPriceValue": 53176.1500000000014551915228366851806640625
+                        },
+                        {
+                            "loanPrincipalDate": "2040",
+                            "monthlyPaymentBeforeTax": 51300,
+                            "monthlyPaymentAfterTax": 50796.7800000000006548361852765083312988281250,
+                            "principalPayment": 49310.96999999999979991116560995578765869140625,
+                            "interest": 1989.030000000000001136868377216160297393798828125,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 3865.17999999999983629095368087291717529296875,
+                            "bondsPriceValue": 3865.17999999999983629095368087291717529296875
+                        },
+                        {
+                            "loanPrincipalDate": "2041",
+                            "monthlyPaymentBeforeTax": 3886.51999999999998181010596454143524169921875,
+                            "monthlyPaymentAfterTax": 3881.1199999999998908606357872486114501953125,
+                            "principalPayment": 3865.17999999999983629095368087291717529296875,
+                            "interest": 21.339999999999999857891452847979962825775146484375,
+                            "additionalInterest": 0,
+                            "loanPrincipal": 0,
+                            "bondsPriceValue": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

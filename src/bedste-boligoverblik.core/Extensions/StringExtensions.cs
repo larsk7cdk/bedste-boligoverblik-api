@@ -1,4 +1,6 @@
-﻿namespace bedste_boligoverblik.core.Extensions
+﻿using System;
+
+namespace bedste_boligoverblik.core.Extensions
 {
     public static class StringExtensions
     {
@@ -7,9 +9,10 @@
             return s == null ? 0 : int.Parse(s.Replace(".", ","));
         }
 
-        public static decimal ToDecimal(this string s)
+        public static decimal ToDecimal(this string s, int noOfDecimals = 2)
         {
-            return s == null ? 0 : decimal.Parse(s.Replace(".", ","));
+            var result = s == null ? 0 : decimal.Parse(s.Replace(".", ","));
+            return Math.Round(result, noOfDecimals);
         }
     }
 }
