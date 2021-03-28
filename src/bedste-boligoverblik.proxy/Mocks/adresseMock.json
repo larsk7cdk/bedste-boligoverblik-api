@@ -1,0 +1,24 @@
+[
+{
+  "id": "0a3f50a5-9ae9-32b8-e044-0003ba298018",
+  "status": 1,
+  "darstatus": 3,
+  "vejkode": "8393",
+  "vejnavn": "Søbyvej",
+  "adresseringsvejnavn": "Søbyvej",
+  "husnr": "1",
+  "etage": null,
+  "dør": null,
+  "supplerendebynavn": null,
+  "postnr": "2650",
+  "postnrnavn": "Hvidovre",
+  "stormodtagerpostnr": null,
+  "stormodtagerpostnrnavn": null,
+  "kommunekode": "0167",
+  "adgangsadresseid": "0a3f507c-e465-32b8-e044-0003ba298018",
+  "x": 12.49498546,
+  "y": 55.63046003,
+  "href": "https://api.dataforsyningen.dk/adresser/0a3f50a5-9ae9-32b8-e044-0003ba298018",
+  "betegnelse": "Søbyvej 1, 2650 Hvidovre"
+}
+]

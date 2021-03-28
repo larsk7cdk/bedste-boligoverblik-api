@@ -7,6 +7,7 @@ namespace bedste_boligoverblik.proxy.Configuration
     {
         public static void Configure(IServiceCollection services)
         {
+            services.AddSingleton<IAdresseProxy, AdresseProxy>();
             services.AddSingleton<IJyskeBankProxy, JyskeBankProxy>();
         }
     }

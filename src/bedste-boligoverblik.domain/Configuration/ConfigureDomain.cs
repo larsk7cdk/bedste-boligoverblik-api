@@ -8,9 +8,10 @@ namespace bedste_boligoverblik.domain.Configuration
     {
         public static void Configure(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(BeregnMapperProfile));
+            services.AddAutoMapper(typeof(AdresseMapperProfile), typeof(BeregnMapperProfile));
             services.AddSingleton<IBeregnMapper, BeregnMapper>();
 
+            services.AddSingleton<IAdresseFacade, AdresseFacade>();
             services.AddSingleton<IBeregnFacade, BeregnFacade>();
             services.AddSingleton<ILaanProdukterFacade, LaanProdukterFacade>();
         }

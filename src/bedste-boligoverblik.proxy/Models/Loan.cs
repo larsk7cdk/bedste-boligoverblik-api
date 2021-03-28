@@ -2,35 +2,35 @@
 {
     public class Loan
     {
-        public string MortgageProduct { get; set; }
-        public string MonthlyPaymentBeforeTax { get; set; }
-        public string AnnualCostInPercent { get; set; }
-        public string DebtInterestRate { get; set; }
-        public string TotalRepayment { get; set; }
-        public string CreditAmount { get; set; }
-        public string LoanPeriod { get; set; }
-        public string NumberOfPayments { get; set; }
-        public string TotalCreditCosts { get; set; }
-        public string LoanPrincipal { get; set; }
-        public string InterestOnlyYears { get; set; }
-        public string MonthlyPaymentAfterTax { get; set; }
-        public string MonthlyPrincipalPayment { get; set; }
-        public string AnnualCostInPercentAfterTax { get; set; }
-        public string BaseInterestRate { get; set; }
-        public string AdditionalInterestRate { get; set; }
-        public string BondPrice { get; set; }
-        public string BondPriceDate { get; set; }
-        public string BondsPriceValue { get; set; }
-        public string TotalEstablishmentCosts { get; set; }
-        public string RegistrationOfDeedFee { get; set; }
-        public string OtherTransactionCosts { get; set; }
-        public string TotalProceeds { get; set; }
-        public string LoanEstablishmentFee { get; set; }
-        public string StateCosts { get; set; }
-        public string TotalInterestPayment { get; set; }
-        public string PriceLossBonds { get; set; }
-        public string InterestMaxExpireDate { get; set; }
-        public string InterestMaxRate { get; set; }
-        public Paymentrow[] PaymentRows { get; set; }
+        public string MortgageProduct { get; init; }
+        public string MonthlyPaymentBeforeTax { get; init; }
+        public string AnnualCostInPercent { get; init; }
+        public string DebtInterestRate { get; init; }
+        public string TotalRepayment { get; init; }
+        public string CreditAmount { get; init; }
+        public string LoanPeriod { get; init; }
+        public string NumberOfPayments { get; init; }
+        public string TotalCreditCosts { get; init; }
+        public string LoanPrincipal { get; init; }
+        public string InterestOnlyYears { get; init; }
+        public string MonthlyPaymentAfterTax { get; init; }
+        public string MonthlyPrincipalPayment { get; init; }
+        public string AnnualCostInPercentAfterTax { get; init; }
+        public string BaseInterestRate { get; init; }
+        public string AdditionalInterestRate { get; init; }
+        public string BondPrice { get; init; }
+        public string BondPriceDate { get; init; }
+        public string BondsPriceValue { get; init; }
+        public string TotalEstablishmentCosts { get; init; }
+        public string RegistrationOfDeedFee { get; init; }
+        public string OtherTransactionCosts { get; init; }
+        public string TotalProceeds { get; init; }
+        public string LoanEstablishmentFee { get; init; }
+        public string StateCosts { get; init; }
+        public string TotalInterestPayment { get; init; }
+        public string PriceLossBonds { get; init; }
+        public string InterestMaxExpireDate { get; init; }
+        public string InterestMaxRate { get; init; }
+        public Paymentrow[] PaymentRows { get; init; }
     }
 }
