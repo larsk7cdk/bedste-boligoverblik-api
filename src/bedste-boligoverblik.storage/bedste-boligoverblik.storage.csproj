@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>bedste_boligoverblik.storage</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\bedste-boligoverblik.core\bedste-boligoverblik.core.csproj" />
+  </ItemGroup>
+
+</Project>

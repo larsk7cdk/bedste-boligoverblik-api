@@ -8,6 +8,7 @@
   <ItemGroup>
     <ProjectReference Include="..\bedste-boligoverblik.core\bedste-boligoverblik.core.csproj" />
     <ProjectReference Include="..\bedste-boligoverblik.proxy\bedste-boligoverblik.proxy.csproj" />
+    <ProjectReference Include="..\bedste-boligoverblik.storage\bedste-boligoverblik.storage.csproj" />
   </ItemGroup>
 
   <ItemGroup>

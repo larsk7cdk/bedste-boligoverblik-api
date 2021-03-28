@@ -20,6 +20,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.domain
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.proxy", "src\bedste-boligoverblik.proxy\bedste-boligoverblik.proxy.csproj", "{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bedste-boligoverblik.storage", "src\bedste-boligoverblik.storage\bedste-boligoverblik.storage.csproj", "{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,6 +44,10 @@ Global
 		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{08D07A15-FA2B-4A6E-A932-408EA494E9AF} = {974FB96F-9D63-4893-9872-6175D559CBE5}
 		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE} = {974FB96F-9D63-4893-9872-6175D559CBE5}
 		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6} = {974FB96F-9D63-4893-9872-6175D559CBE5}
+		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81} = {974FB96F-9D63-4893-9872-6175D559CBE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4AFB2386-39CB-4912-9DB0-071D2C762C93}
