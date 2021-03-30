@@ -15,7 +15,7 @@ namespace bedste_boligoverblik.core.Extensions
             if (s != null)
             {
 
-                var indexOf = s.IndexOf(".", StringComparison.InvariantCulture);
+                var indexOf = s.IndexOf(".", StringComparison.CurrentCulture);
                 var totalWidth = indexOf + 1 + noOfDecimals;
 
                 sValue = s.Length > totalWidth && indexOf > 0
