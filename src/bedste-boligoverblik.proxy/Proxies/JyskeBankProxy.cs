@@ -35,8 +35,8 @@ namespace bedste_boligoverblik.proxy.Proxies
             url.Append($"&durationInYearsBankLoan={request.LoebetidBank}");
             url.Append($"&mortgageProduct={request.Produkt}");
 
-            var result = await _httpClientHelper.GetAsync(url.ToString());
-            //var result = await File.ReadAllTextAsync("d:\\temp\\response.json");
+            //var result = await _httpClientHelper.GetAsync(url.ToString());
+            var result = await File.ReadAllTextAsync("d:\\temp\\response2.json");
 
             _logger.LogInformation(result);
 
