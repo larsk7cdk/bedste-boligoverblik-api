@@ -15,7 +15,7 @@ namespace bedste_boligoverblik.core.test.Extensions
         public void ToDecimal_Should_Return_Value_When_Null()
         {
             // Arrange 
-            const decimal expected = 0m;
+            const decimal expected = 1m;
 
             // Act
             var actual = VALUE_NULL.ToDecimal();
