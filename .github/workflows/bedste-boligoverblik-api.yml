@@ -10,7 +10,7 @@ env:
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
   WORKING_DIRECTORY: src\bedste-boligoverblik.api
-  TEST_DIRECTORY: test
+  TEST_CORE_DIRECTORY: test\bedste-boligoverblik.core.test
 jobs:
   build:
     runs-on: windows-latest
@@ -29,7 +29,7 @@ jobs:
     - name: Test
       run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build           
     - name: Test Core
-      run: dotnet test "${{ env.TEST_DIRECTORY }}\\bedste-boligoverblik.core.test" --no-build
+      run: dotnet test "${{ env.TEST_CORE_DIRECTORY }}" --no-build
     - name: Publish
       run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
     - name: Deploy to Azure WebApp
