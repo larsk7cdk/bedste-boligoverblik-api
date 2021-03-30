@@ -1,3 +1,4 @@
+using System;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -22,7 +23,9 @@ namespace bedste_boligoverblik.api
                         .ConfigureAppConfiguration(config =>
                         {
                             config
-                                .AddJsonFile("appsettings.json", true);
+                                .AddJsonFile(
+                                    $"appsettings.{Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")}.json",
+                                    true, true);
                         })
                         .UseSerilog((hostingContext, loggerConfiguration) =>
                         {
