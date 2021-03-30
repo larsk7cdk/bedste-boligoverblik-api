@@ -22,7 +22,7 @@ namespace bedste_boligoverblik.core.Extensions
                     ? s.Substring(0, totalWidth)
                     : s.PadRight(totalWidth, '0');
 
-               // sValue = sValue.Replace(".", ",");
+               sValue = sValue.Replace(".", ",");
             }
 
             var result = decimal.Parse(sValue);
