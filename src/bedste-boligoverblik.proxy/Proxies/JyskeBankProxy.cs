@@ -1,9 +1,7 @@
-﻿using System.IO;
-using System.Text;
+﻿using System.Text;
 using System.Threading.Tasks;
 using bedste_boligoverblik.core.Helpers;
 using bedste_boligoverblik.proxy.Models;
-using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace bedste_boligoverblik.proxy.Proxies
@@ -11,13 +9,10 @@ namespace bedste_boligoverblik.proxy.Proxies
     public class JyskeBankProxy : IJyskeBankProxy
     {
         private readonly IHttpClientHelper _httpClientHelper;
-        private readonly ILogger<JyskeBankProxy> _logger;
 
-
-        public JyskeBankProxy(IHttpClientHelper httpClientHelper, ILogger<JyskeBankProxy> logger)
+        public JyskeBankProxy(IHttpClientHelper httpClientHelper)
         {
             _httpClientHelper = httpClientHelper;
-            _logger = logger;
         }
 
         public async Task<BeregnProxyResponse> BeregnPris(BeregnProxyRequest request
@@ -36,9 +31,7 @@ namespace bedste_boligoverblik.proxy.Proxies
             url.Append($"&mortgageProduct={request.Produkt}");
 
             var result = await _httpClientHelper.GetAsync(url.ToString());
-            //var result = await File.ReadAllTextAsync("d:\\temp\\response2.json");
-
-            _logger.LogInformation(result);
+            //var result = await File.ReadAllTextAsync("d:\\temp\\response.json");
 
             return JsonConvert.DeserializeObject<BeregnProxyResponse>(result);
         }
