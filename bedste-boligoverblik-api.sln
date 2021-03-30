@@ -22,8 +22,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.proxy"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.storage", "src\bedste-boligoverblik.storage\bedste-boligoverblik.storage.csproj", "{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.domain.test", "test\bedste-boligoverblik.domain.test\bedste-boligoverblik.domain.test.csproj", "{905B2B8E-D0B1-4A86-8085-B42CF6A33175}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bedste-boligoverblik.core.test", "test\bedste-boligoverblik.core.test\bedste-boligoverblik.core.test.csproj", "{2369FA5B-CBA7-4A28-95CB-2774945E5F0E}"
 EndProject
 Global
@@ -52,10 +50,6 @@ Global
 		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81}.Release|Any CPU.Build.0 = Release|Any CPU
-		{905B2B8E-D0B1-4A86-8085-B42CF6A33175}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{905B2B8E-D0B1-4A86-8085-B42CF6A33175}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{905B2B8E-D0B1-4A86-8085-B42CF6A33175}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{905B2B8E-D0B1-4A86-8085-B42CF6A33175}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2369FA5B-CBA7-4A28-95CB-2774945E5F0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2369FA5B-CBA7-4A28-95CB-2774945E5F0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2369FA5B-CBA7-4A28-95CB-2774945E5F0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -70,7 +64,6 @@ Global
 		{F9496EE2-5C46-4FCA-B0C1-60152D15B0DE} = {974FB96F-9D63-4893-9872-6175D559CBE5}
 		{9D7C6A34-C8ED-4725-B361-E0F67F0F0FC6} = {974FB96F-9D63-4893-9872-6175D559CBE5}
 		{32FA3E20-DE15-4AA6-BDCD-7F946539CA81} = {974FB96F-9D63-4893-9872-6175D559CBE5}
-		{905B2B8E-D0B1-4A86-8085-B42CF6A33175} = {B4340F1E-AFDE-4AC5-A00E-40D406C5003B}
 		{2369FA5B-CBA7-4A28-95CB-2774945E5F0E} = {B4340F1E-AFDE-4AC5-A00E-40D406C5003B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
