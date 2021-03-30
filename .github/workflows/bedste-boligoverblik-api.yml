@@ -9,8 +9,7 @@ env:
   AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.BEDSTE_BOLIGOVERBLIK_API_FFFF }}
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 5.0.x
-  WORKING_DIRECTORY: src\bedste-boligoverblik.api
-  TEST_CORE_DIRECTORY: test\bedste-boligoverblik.core.test
+  WORKING_DIRECTORY: src\bedste-boligoverblik.api  
 jobs:
   build:
     runs-on: windows-latest
@@ -27,9 +26,7 @@ jobs:
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
     - name: Test
-      run: dotnet test "${{ env.WORKING_DIRECTORY }}" --no-build           
-    - name: Test Core
-      run: dotnet test "${{ env.TEST_CORE_DIRECTORY }}" --no-build
+      run: dotnet test --verbosity normal --no-build           
     - name: Publish
       run: dotnet publish "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-build --output "${{ env.AZURE_WEBAPP_PACKAGE_PATH }}"
     - name: Deploy to Azure WebApp
