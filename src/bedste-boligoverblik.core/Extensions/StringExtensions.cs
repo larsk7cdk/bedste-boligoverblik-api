@@ -10,8 +10,15 @@ namespace bedste_boligoverblik.core.Extensions
 
         public static decimal ToDecimal(this string s, int noOfDecimals = 2)
         {
-            var result = s == null ? 0 : decimal.Parse(s.Replace(".", ","));
-            return Math.Round(result, noOfDecimals);
+            var sDecimal = s == null ? "0.0" : s.Replace(".", ",");
+            var parseResult = decimal.TryParse(sDecimal, out var result);
+
+            if (parseResult)
+            {
+                return Math.Round(result, noOfDecimals);
+            }
+
+            throw new Exception($"Fejl ved parse af {s}");
         }
 
         public static string CapitalizeFirstLetter(this string s) =>
