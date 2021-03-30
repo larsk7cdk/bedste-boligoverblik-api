@@ -5,7 +5,7 @@ namespace bedste_boligoverblik.domain.Models.Laan
     public class BasisLaan
     {
         public decimal Restgaeld { get; init; }
-        public int Loebetid { get; init; }
+        public decimal Loebetid { get; init; }
         public decimal MdlYdelseFoerSkat { get; init; }
         public decimal MdlYdelseEfterSkat { get; init; }
         public decimal MdlAfdrag { get; init; }
