@@ -8,6 +8,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>C:\repos\repos-smartlearning\bedste-boligoverblik-api\src\bedste-boligoverblik.api\bedste-boligoverblik.api.xml</DocumentationFile>
     <NoWarn>1701;1702;1591</NoWarn>
+    <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>

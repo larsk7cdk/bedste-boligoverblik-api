@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net.Mime;
+using System.Threading.Tasks;
 using AutoMapper;
 using bedste_boligoverblik.api.Models;
 using bedste_boligoverblik.domain.Facades;
@@ -9,17 +10,15 @@ namespace bedste_boligoverblik.api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Produces("application/json")]
+    [Consumes(MediaTypeNames.Application.Json)]
+    [Produces(MediaTypeNames.Application.Json)]
     public class BeregningController : ControllerBase
     {
         /// <summary>
         ///     Laver en beregning på Jyske Bank
         /// </summary>
-        /// <returns>
-        ///     Lånberegning med Realkredit lån og Banklån hvis det findes
-        ///     Inkluderer også tilbagebetalingsplan
-        /// </returns>
         [HttpGet]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public async Task<IActionResult> Get(
             [FromServices] IMapper mapper,
             [FromServices] IBeregnFacade beregnFacade,

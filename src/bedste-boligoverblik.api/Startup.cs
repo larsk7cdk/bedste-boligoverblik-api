@@ -2,6 +2,7 @@ using bedste_boligoverblik.api.Configuration;
 using bedste_boligoverblik.core.Configuration;
 using bedste_boligoverblik.domain.Configuration;
 using bedste_boligoverblik.proxy.Configuration;
+using bedste_boligoverblik.storage.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,6 +23,7 @@ namespace bedste_boligoverblik.api
         public void ConfigureServices(IServiceCollection services)
         {
             ConfigureCore.Configure(services);
+            ConfigureStorage.Configure(services, Configuration);
             ConfigureDomain.Configure(services);
             ConfigureProxy.Configure(services);
 

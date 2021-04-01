@@ -10,7 +10,10 @@ namespace bedste_boligoverblik.api.Configuration
         {
             services.ConfigureSwaggerServices();
 
-            services.AddAutoMapper(typeof(BeregnMapperProfile));
+            services.AddAutoMapper(
+                typeof(AdresseMapperProfile),
+                typeof(BeregnMapperProfile),
+                typeof(BoligMapperProfile));
 
             services.AddControllers();
         }
