@@ -13,61 +13,61 @@ namespace bedste_boligoverblik.api.Controllers
     [ApiController]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces(MediaTypeNames.Application.Json)]
-    public class BoligController : ControllerBase
+    public class LaanberegningController : ControllerBase
     {
         /// <summary>
-        ///     Henter alle boliger for en given bruger
+        ///     Henter alle lånberegninger for en given bolig
         /// </summary>
-        [HttpGet("{userKey}")]
+        [HttpGet("{boligKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public IActionResult GetByUserKey([FromServices] IBoligFacade facade, string userKey)
+        public IActionResult GetByBoligKey([FromServices] ILaanberegningFacade facade, string boligKey)
         {
-            var response = facade.GetByUserKeyAsync(userKey);
+            var response = facade.GetByBoligKeyAsync(boligKey);
             return Ok(response);
         }
 
         /// <summary>
-        ///     Henter en bolig
+        ///     Henter en lånberegning
         /// </summary>
         [HttpGet]
         [Route("byrowkey/{rowKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByRowKey([FromServices] IBoligFacade facade, string rowKey)
+        public async Task<IActionResult> GetByRowKey([FromServices] ILaanberegningFacade facade, string rowKey)
         {
             var response = await facade.GetByRowKeyAsync(rowKey);
             return Ok(response);
         }
 
         /// <summary>
-        ///     Opret en bolig
+        ///     Opret en Lånberegning
         /// </summary>
         [HttpPost]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Create))]
         public async Task<IActionResult> Create(
             [FromServices] IMapper mapper,
-            [FromServices] IBoligFacade facade,
-            [FromBody] BoligRequest request)
+            [FromServices] ILaanberegningFacade facade,
+            [FromBody] LaanberegningRequest request)
         {
-            var entity = mapper.Map<BoligEntity>(request);
+            var entity = mapper.Map<LaanBeregningEntity>(request);
             await facade.CreateAsync(entity);
 
-            return Created(string.Empty, "Bolig er oprettet");
+            return Created(string.Empty, "Lånberegning er oprettet");
         }
 
 
         /// <summary>
-        ///     Opdater en bolig
+        ///     Opdater en Lånberegning
         /// </summary>
         [HttpPut]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Put))]
         public async Task<IActionResult> Update(
             [FromServices] IMapper mapper,
-            [FromServices] IBoligFacade facade,
-            [FromBody] BoligUpdateRequest request)
+            [FromServices] ILaanberegningFacade facade,
+            [FromBody] LaanberegningUpdateRequest request)
         {
             try
             {
-                var entity = mapper.Map<BoligEntity>(request);
+                var entity = mapper.Map<LaanBeregningEntity>(request);
                 await facade.UpdateAsync(entity);
 
                 return Ok();
@@ -83,11 +83,11 @@ namespace bedste_boligoverblik.api.Controllers
 
 
         /// <summary>
-        ///     Slet en bolig
+        ///     Slet en Lånberegning
         /// </summary>
         [HttpDelete("{rowKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Delete))]
-        public async Task<IActionResult> Delete([FromServices] IBoligFacade facade, string rowKey)
+        public async Task<IActionResult> Delete([FromServices] ILaanberegningFacade facade, string rowKey)
         {
             try
             {

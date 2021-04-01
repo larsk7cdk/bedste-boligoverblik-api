@@ -27,7 +27,7 @@ namespace bedste_boligoverblik.api
             ConfigureDomain.Configure(services);
             ConfigureProxy.Configure(services);
 
-            services.ConfigureServices(Configuration);
+            services.ConfigureServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
