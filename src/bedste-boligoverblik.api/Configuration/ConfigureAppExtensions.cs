@@ -19,7 +19,11 @@ namespace bedste_boligoverblik.api.Configuration
                 app.UseDeveloperExceptionPage();
                 app.ConfigureSwaggerApp();
             }
-            
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
+
             app.UseHttpsRedirection();
 
             app.UseRouting();
