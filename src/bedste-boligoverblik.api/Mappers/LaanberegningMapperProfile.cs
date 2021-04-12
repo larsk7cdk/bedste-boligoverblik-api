@@ -9,10 +9,10 @@ namespace bedste_boligoverblik.api.Mappers
     {
         public LaanberegningMapperProfile()
         {
-            CreateMap<LaanberegningRequest, LaanBeregningEntity>().ForMember(dest => dest.RowKey, opt =>
+            CreateMap<LaanberegningRequest, LaanberegningEntity>().ForMember(dest => dest.RowKey, opt =>
                 opt.MapFrom(src => Guid.NewGuid().ToString()));
 
-            CreateMap<LaanberegningUpdateRequest, LaanBeregningEntity>()
+            CreateMap<LaanberegningUpdateRequest, LaanberegningEntity>()
                 .ForMember(dest => dest.RowKey, opt =>
                     opt.MapFrom(src => src.RowKey));
         }

@@ -6,10 +6,10 @@ namespace bedste_boligoverblik.domain.Facades
 {
     public interface ILaanberegningFacade
     {
-        AsyncPageable<LaanBeregningEntity> GetByBoligKeyAsync(string userKey);
-        Task<Response<LaanBeregningEntity>> GetByRowKeyAsync(string rowKey);
-        Task<Response> CreateAsync(LaanBeregningEntity entity);
-        Task<Response> UpdateAsync(LaanBeregningEntity entity);
+        AsyncPageable<LaanberegningEntity> GetByBoligKeyAsync(string userKey);
+        Task<Response<LaanberegningEntity>> GetByRowKeyAsync(string rowKey);
+        Task<Response> CreateAsync(LaanberegningEntity entity);
+        Task<Response> UpdateAsync(LaanberegningEntity entity);
         Task<Response> DeleteAsync(string rowKey);
     }
 }

@@ -11,8 +11,8 @@ namespace bedste_boligoverblik.storage.Configuration
         {
             var storageConnection = configuration.GetConnectionString("storageConnection");
 
-            services.AddSingleton<IRepository<BoligEntity>>(_ => new BoligRepository<BoligEntity>(storageConnection));
-            services.AddSingleton<IRepository<LaanBeregningEntity>>(_ => new LaanberegningRepository<LaanBeregningEntity>(storageConnection));
+            services.AddSingleton<IRepository<BoligEntity>>(_ => new Repository<BoligEntity>(storageConnection, "bolig"));
+            services.AddSingleton<IRepository<LaanberegningEntity>>(_ => new Repository<LaanberegningEntity>(storageConnection, "laanberegning"));
             
         }
     }

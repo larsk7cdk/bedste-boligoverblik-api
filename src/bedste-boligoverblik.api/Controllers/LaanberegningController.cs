@@ -48,7 +48,7 @@ namespace bedste_boligoverblik.api.Controllers
             [FromServices] ILaanberegningFacade facade,
             [FromBody] LaanberegningRequest request)
         {
-            var entity = mapper.Map<LaanBeregningEntity>(request);
+            var entity = mapper.Map<LaanberegningEntity>(request);
             await facade.CreateAsync(entity);
 
             return Created(string.Empty, "Lånberegning er oprettet");
@@ -67,7 +67,7 @@ namespace bedste_boligoverblik.api.Controllers
         {
             try
             {
-                var entity = mapper.Map<LaanBeregningEntity>(request);
+                var entity = mapper.Map<LaanberegningEntity>(request);
                 await facade.UpdateAsync(entity);
 
                 return Ok();

@@ -6,19 +6,20 @@ using Azure.Data.Tables;
 
 namespace bedste_boligoverblik.storage.Repositories
 {
-    internal class BoligRepository<T> : IRepository<T> where T : class, ITableEntity, new()
+    internal class Repository<T> : IRepository<T> where T : class, ITableEntity, new()
     {
-        const string PARTITION_KEY = "bolig";
+        private readonly string _partitionKey;
         private readonly TableClient _tableClient;
 
-        public BoligRepository(string storageConnection)
+        public Repository(string storageConnection, string partitionKey)
         {
-            _tableClient = new TableClient(storageConnection, PARTITION_KEY);
+            _partitionKey = partitionKey;
+            _tableClient = new TableClient(storageConnection, partitionKey);
         }
 
-        public Response<T> GetByRowKey(string rowKey) => _tableClient.GetEntity<T>(PARTITION_KEY, rowKey);
+        public Response<T> GetByRowKey(string rowKey) => _tableClient.GetEntity<T>(_partitionKey, rowKey);
 
-        public Task<Response<T>> GetByRowKeyAsync(string rowKey) => _tableClient.GetEntityAsync<T>(PARTITION_KEY, rowKey);
+        public Task<Response<T>> GetByRowKeyAsync(string rowKey) => _tableClient.GetEntityAsync<T>(_partitionKey, rowKey);
 
         public Pageable<T> Query(Expression<Func<T, bool>> filter) => _tableClient.Query(filter);
 
@@ -32,8 +33,8 @@ namespace bedste_boligoverblik.storage.Repositories
 
         public Task<Response> UpdateAsync(T entity) => _tableClient.UpdateEntityAsync(entity, ETag.All);
 
-        public Response Delete(string rowKey) => _tableClient.DeleteEntity(PARTITION_KEY, rowKey);
+        public Response Delete(string rowKey) => _tableClient.DeleteEntity(_partitionKey, rowKey);
 
-        public Task<Response> DeleteAsync(string rowKey) => _tableClient.DeleteEntityAsync(PARTITION_KEY, rowKey);
+        public Task<Response> DeleteAsync(string rowKey) => _tableClient.DeleteEntityAsync(_partitionKey, rowKey);
     }
 }

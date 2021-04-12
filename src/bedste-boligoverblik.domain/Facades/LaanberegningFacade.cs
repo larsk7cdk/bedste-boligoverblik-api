@@ -7,20 +7,20 @@ namespace bedste_boligoverblik.domain.Facades
 {
     public class LaanberegningFacade : ILaanberegningFacade
     {
-        private readonly IRepository<LaanBeregningEntity> _repository;
+        private readonly IRepository<LaanberegningEntity> _repository;
 
-        public LaanberegningFacade(IRepository<LaanBeregningEntity> repository)
+        public LaanberegningFacade(IRepository<LaanberegningEntity> repository)
         {
             _repository = repository;
         }
 
-        public AsyncPageable<LaanBeregningEntity> GetByBoligKeyAsync(string boligKey) => _repository.QueryAsync(entity => entity.BoligKey == boligKey);
+        public AsyncPageable<LaanberegningEntity> GetByBoligKeyAsync(string boligKey) => _repository.QueryAsync(entity => entity.BoligKey == boligKey);
 
-        public Task<Response<LaanBeregningEntity>> GetByRowKeyAsync(string rowKey) => _repository.GetByRowKeyAsync(rowKey);
+        public Task<Response<LaanberegningEntity>> GetByRowKeyAsync(string rowKey) => _repository.GetByRowKeyAsync(rowKey);
 
-        public Task<Response> CreateAsync(LaanBeregningEntity entity) => _repository.CreateAsync(entity);
+        public Task<Response> CreateAsync(LaanberegningEntity entity) => _repository.CreateAsync(entity);
 
-        public Task<Response> UpdateAsync(LaanBeregningEntity entity) => _repository.UpdateAsync(entity);
+        public Task<Response> UpdateAsync(LaanberegningEntity entity) => _repository.UpdateAsync(entity);
 
         public Task<Response> DeleteAsync(string rowkey) => _repository.DeleteAsync(rowkey);
     }

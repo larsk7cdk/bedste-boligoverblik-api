@@ -4,7 +4,7 @@ using Azure.Data.Tables;
 
 namespace bedste_boligoverblik.storage.Entities
 {
-    public class LaanBeregningEntity : ITableEntity
+    public class LaanberegningEntity : ITableEntity
     {
         public string BoligKey { get; init; }
         public string Produkt { get; init; }
