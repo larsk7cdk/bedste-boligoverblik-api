@@ -22,7 +22,7 @@ jobs:
     - name: Clean
       run: dotnet clean --configuration Release && dotnet nuget locals all --clear
     - name: Restore
-      run: dotnet restore "${{ env.WORKING_DIRECTORY }}"
+      run: dotnet restore
     - name: Build
       run: dotnet build "${{ env.WORKING_DIRECTORY }}" --configuration ${{ env.CONFIGURATION }} --no-restore
     - name: Test
