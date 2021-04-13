@@ -1,3 +1,4 @@
+using System.Globalization;
 using bedste_boligoverblik.core.Extensions;
 using Xunit;
 
@@ -10,6 +11,13 @@ namespace bedste_boligoverblik.core.test.Extensions
         private const string VALUE_MANY_DECIMALS = "3616362.68123456205182004719972610473632812512345";
         private const string VALUE_FEWER_DECIMALS = "3616362.6";
 
+
+        public StringExtensionsTest()
+        {
+            var cultureInfo = new CultureInfo("da-DK");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+        }
 
         [Fact]
         public void ToDecimal_Should_Return_Value_When_Null()
