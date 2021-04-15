@@ -28,7 +28,11 @@ namespace bedste_boligoverblik.api.Configuration
 
             app.UseRouting();
 
-            app.UseCors();
+            app.UseCors(builder =>
+            {
+                builder.WithMethods("GET", "POST");
+                builder.WithOrigins("https://bedste-boligoverblik-api.azurewebsites.net");
+            });
 
             app.UseAuthorization();
 

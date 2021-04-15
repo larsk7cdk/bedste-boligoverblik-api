@@ -4,26 +4,70 @@
         <name>bedste-boligoverblik.api</name>
     </assembly>
     <members>
-        <member name="M:bedste_boligoverblik.api.Controllers.BeregningController.Beregn(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.IBeregnFacade,bedste_boligoverblik.api.Models.BeregnRequest)">
+        <member name="M:bedste_boligoverblik.api.Controllers.AdresseController.Get(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.IAdresseFacade,bedste_boligoverblik.api.Models.AdresseRequest)">
             <summary>
-                Laver en beregning
+                Finder en adress på DAWA
             </summary>
-            <returns>
-            </returns>
         </member>
-        <member name="M:bedste_boligoverblik.api.Controllers.ProduktController.Get">
+        <member name="M:bedste_boligoverblik.api.Controllers.BeregningController.Get(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.IBeregnFacade,bedste_boligoverblik.api.Models.BeregnRequest)">
             <summary>
-                Henter produkter der kan beregnes på
+                Laver en beregning på Jyske Bank
             </summary>
-            <returns></returns>
         </member>
-        <member name="M:bedste_boligoverblik.api.Controllers.WeatherForecastController.Get">
+        <member name="M:bedste_boligoverblik.api.Controllers.BoligController.GetByUserKey(bedste_boligoverblik.domain.Facades.IBoligFacade,System.String)">
             <summary>
-                Dette er en test
+                Henter alle boliger for en given bruger
             </summary>
-            <returns>
-                Temperatur
-            </returns>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.BoligController.GetByRowKey(bedste_boligoverblik.domain.Facades.IBoligFacade,System.String)">
+            <summary>
+                Henter en bolig
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.BoligController.Create(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.IBoligFacade,bedste_boligoverblik.api.Models.BoligRequest)">
+            <summary>
+                Opret en bolig
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.BoligController.Update(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.IBoligFacade,bedste_boligoverblik.api.Models.BoligUpdateRequest)">
+            <summary>
+                Opdater en bolig
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.BoligController.Delete(bedste_boligoverblik.domain.Facades.IBoligFacade,System.String)">
+            <summary>
+                Slet en bolig
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.LaanberegningController.GetByBoligKey(bedste_boligoverblik.domain.Facades.ILaanberegningFacade,System.String)">
+            <summary>
+                Henter alle lånberegninger for en given bolig
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.LaanberegningController.GetByRowKey(bedste_boligoverblik.domain.Facades.ILaanberegningFacade,System.String)">
+            <summary>
+                Henter en lånberegning
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.LaanberegningController.Create(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.ILaanberegningFacade,bedste_boligoverblik.api.Models.LaanberegningRequest)">
+            <summary>
+                Opret en Lånberegning
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.LaanberegningController.Update(AutoMapper.IMapper,bedste_boligoverblik.domain.Facades.ILaanberegningFacade,bedste_boligoverblik.api.Models.LaanberegningUpdateRequest)">
+            <summary>
+                Opdater en Lånberegning
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.LaanberegningController.Delete(bedste_boligoverblik.domain.Facades.ILaanberegningFacade,System.String)">
+            <summary>
+                Slet en Lånberegning
+            </summary>
+        </member>
+        <member name="M:bedste_boligoverblik.api.Controllers.ProduktController.Get(bedste_boligoverblik.domain.Facades.ILaanProdukterFacade)">
+            <summary>
+                Henter lånprodukter fra Jyske Bank
+            </summary>
         </member>
     </members>
 </doc>
