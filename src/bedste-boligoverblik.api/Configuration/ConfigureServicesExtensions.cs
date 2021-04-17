@@ -15,6 +15,8 @@ namespace bedste_boligoverblik.api.Configuration
                 typeof(BoligMapperProfile),
                 typeof(LaanberegningMapperProfile));
 
+            services.AddCors();
+
             services.AddControllers();
         }
     }
