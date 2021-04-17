@@ -30,6 +30,7 @@ namespace bedste_boligoverblik.api.Configuration
 
             app.UseCors(options =>
             {
+                options.AllowAnyMethod();
                 options.WithOrigins("https://bedste-boligoverblik.azurewebsites.net");
             });
 
