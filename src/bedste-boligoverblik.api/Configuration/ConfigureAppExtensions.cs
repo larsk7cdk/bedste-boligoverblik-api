@@ -23,18 +23,16 @@ namespace bedste_boligoverblik.api.Configuration
             {
                 app.UseExceptionHandler("/error");
             }
-            
+
             app.UseCors(options =>
             {
-                //options.WithMethods("GET", "POST", "PUT", "DELETE");
-                options.WithOrigins("https://bedste-boligoverblik.azurewebsites.net");
-
-                options.AllowAnyHeader();
-                options.AllowAnyMethod();
+                options.WithOrigins("https://bedste-boligoverblik.azurewebsites.net", "http://localhost:4200/");
+                options.WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
+                options.AllowCredentials();
             });
 
             app.UseHttpsRedirection();
-            
+
             app.UseRouting();
 
             app.UseAuthorization();
