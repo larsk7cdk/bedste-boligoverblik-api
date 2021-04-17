@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>bedste_boligoverblik.api</RootNamespace>
+    <UserSecretsId>bc57c556-1bcb-40de-886f-d0c6c7354166</UserSecretsId>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
