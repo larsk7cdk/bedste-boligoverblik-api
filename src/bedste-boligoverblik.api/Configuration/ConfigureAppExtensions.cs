@@ -26,7 +26,7 @@ namespace bedste_boligoverblik.api.Configuration
 
             app.UseCors(options =>
             {
-                options.WithOrigins("https://bedste-boligoverblik.azurewebsites.net", "http://localhost:4200/");
+                options.WithOrigins("https://bedste-boligoverblik.azurewebsites.net");
                 options.WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
                 options.AllowCredentials();
             });
