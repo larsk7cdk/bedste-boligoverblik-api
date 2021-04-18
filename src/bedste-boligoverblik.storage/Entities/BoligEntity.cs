@@ -7,7 +7,7 @@ namespace bedste_boligoverblik.storage.Entities
     public class BoligEntity : ITableEntity
     {
         public string UserKey { get; init; }
-        public string Addresse { get; init; }
+        public string Adresse { get; init; }
         public float X { get; init; }
         public float Y { get; init; }
 
