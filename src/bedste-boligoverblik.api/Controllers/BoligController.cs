@@ -1,4 +1,6 @@
-﻿using System.Net.Mime;
+﻿using System;
+using System.Net.Mime;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks;
 using AutoMapper;
 using Azure;
@@ -20,7 +22,7 @@ namespace bedste_boligoverblik.api.Controllers
         /// </summary>
         [HttpGet("{userKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public IActionResult GetByUserKey([FromServices] IBoligFacade facade, string userKey)
+        public async Task<IActionResult> GetByUserKey([FromServices] IBoligFacade facade, string userKey)
         {
             var response = facade.GetByUserKeyAsync(userKey);
             return Ok(response);

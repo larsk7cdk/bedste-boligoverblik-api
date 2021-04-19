@@ -29,6 +29,7 @@ namespace bedste_boligoverblik.api.Configuration
                 options.WithOrigins("https://bedste-boligoverblik.azurewebsites.net", "http://localhost:4200");
                 options.WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS");
                 options.AllowCredentials();
+                options.AllowAnyHeader();
             });
 
             app.UseHttpsRedirection();
