@@ -25,8 +25,8 @@ namespace bedste_boligoverblik.proxy.Proxies
             url.Append("https://api.dataforsyningen.dk");
             url.Append("/adresser");
             url.Append($"?vejnavn={request.Vejnavn.CapitalizeFirstLetter()}");
-            url.Append($"&husnr={request.Husnr}");
-            url.Append($"&postnr={request.Postnr}");
+            url.Append($"&husnr={request.Husnummer}");
+            url.Append($"&postnr={request.Postnummer}");
             url.Append("&struktur=mini");
 
             var result = await _httpClientHelper.GetAsync(url.ToString());
