@@ -3,7 +3,7 @@
     public class AdresseResponse
     {
         public string Betegnelse { get; init; }
-        public double X { get; init; }
-        public double Y { get; init; }
+        public float X { get; init; }
+        public float Y { get; init; }
     }
 }

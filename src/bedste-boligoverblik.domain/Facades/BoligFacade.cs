@@ -34,9 +34,9 @@ namespace bedste_boligoverblik.domain.Facades
 
             if (adresse != null)
             {
-                //entity.X = adresse.X;
-                //entity.Y = adresse.Y;
-                //entity.Adresse = adresse.Betegnelse;
+                entity.X = adresse.X;
+                entity.Y = adresse.Y;
+                entity.Adresse = adresse.Betegnelse;
             }
             else
             {
