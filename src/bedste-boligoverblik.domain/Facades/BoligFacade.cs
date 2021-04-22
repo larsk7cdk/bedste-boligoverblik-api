@@ -1,4 +1,6 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using Azure;
 using bedste_boligoverblik.domain.Models;
 using bedste_boligoverblik.storage.Entities;
@@ -17,7 +19,8 @@ namespace bedste_boligoverblik.domain.Facades
             _repository = repository;
         }
 
-        public AsyncPageable<BoligEntity> GetByUserKeyAsync(string userKey) => _repository.QueryAsync(entity => entity.UserKey == userKey);
+        public IEnumerable<BoligEntity> GetByUserKeyAsync(string userKey) =>
+            _repository.QueryAsync(entity => entity.UserKey == userKey).ToListAsync().Result.OrderBy(o => o.Adresse);
 
         public Task<Response<BoligEntity>> GetByRowKeyAsync(string rowKey) => _repository.GetByRowKeyAsync(rowKey);
 

@@ -6,7 +6,7 @@ namespace bedste_boligoverblik.domain.Facades
 {
     public interface ILaanberegningFacade
     {
-        AsyncPageable<LaanberegningEntity> GetByBoligKeyAsync(string userKey);
+        //AsyncPageable<LaanberegningEntity> GetByBoligKeyAsync(string userKey);
         Task<Response<LaanberegningEntity>> GetByRowKeyAsync(string rowKey);
         Task<Response> CreateAsync(LaanberegningEntity entity);
         Task<Response> UpdateAsync(LaanberegningEntity entity);

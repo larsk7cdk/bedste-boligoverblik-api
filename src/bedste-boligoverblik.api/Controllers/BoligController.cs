@@ -1,6 +1,4 @@
-﻿using System;
-using System.Net.Mime;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Net.Mime;
 using System.Threading.Tasks;
 using AutoMapper;
 using Azure;
@@ -22,7 +20,7 @@ namespace bedste_boligoverblik.api.Controllers
         /// </summary>
         [HttpGet("{userKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByUserKey([FromServices] IBoligFacade facade, string userKey)
+        public IActionResult GetByUserKey([FromServices] IBoligFacade facade, string userKey)
         {
             var response = facade.GetByUserKeyAsync(userKey);
             return Ok(response);
@@ -32,9 +30,9 @@ namespace bedste_boligoverblik.api.Controllers
         ///     Henter en bolig
         /// </summary>
         [HttpGet]
-        [Route("byrowkey/{rowKey}")]
+        [Route("{userKey}/{rowKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByRowKey([FromServices] IBoligFacade facade, string rowKey)
+        public async Task<IActionResult> GetByRowKey([FromServices] IBoligFacade facade, string userKey, string rowKey)
         {
             var response = await facade.GetByRowKeyAsync(rowKey);
             return Ok(response);

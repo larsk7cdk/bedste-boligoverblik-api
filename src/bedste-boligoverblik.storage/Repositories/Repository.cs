@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Azure;
@@ -21,9 +22,19 @@ namespace bedste_boligoverblik.storage.Repositories
 
         public Task<Response<T>> GetByRowKeyAsync(string rowKey) => _tableClient.GetEntityAsync<T>(_partitionKey, rowKey);
 
-        public Pageable<T> Query(Expression<Func<T, bool>> filter) => _tableClient.Query(filter);
+        public IEnumerable<T> Query(Expression<Func<T, bool>> filter)
+        {
+            var enumerator = _tableClient.Query(filter).GetEnumerator();
+            while (enumerator.MoveNext())
+                yield return enumerator.Current;
+        }
 
-        public AsyncPageable<T> QueryAsync(Expression<Func<T, bool>> filter) => _tableClient.QueryAsync(filter);
+        public async IAsyncEnumerable<T> QueryAsync(Expression<Func<T, bool>> filter)
+        {
+            var enumerator = _tableClient.QueryAsync<T>(filter).GetAsyncEnumerator();
+            while (await enumerator.MoveNextAsync())
+                yield return enumerator.Current;
+        }
 
         public Response Create(T entity) => _tableClient.AddEntity(entity);
 

@@ -22,17 +22,17 @@ namespace bedste_boligoverblik.api.Controllers
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
         public IActionResult GetByBoligKey([FromServices] ILaanberegningFacade facade, string boligKey)
         {
-            var response = facade.GetByBoligKeyAsync(boligKey);
-            return Ok(response);
+            // var response = facade.GetByBoligKeyAsync(boligKey);
+            return Ok();
         }
 
         /// <summary>
         ///     Henter en lånberegning
         /// </summary>
         [HttpGet]
-        [Route("byrowkey/{rowKey}")]
+        [Route("{boligKey}/{rowKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByRowKey([FromServices] ILaanberegningFacade facade, string rowKey)
+        public async Task<IActionResult> GetByRowKey([FromServices] ILaanberegningFacade facade, string boligKey, string rowKey)
         {
             var response = await facade.GetByRowKeyAsync(rowKey);
             return Ok(response);

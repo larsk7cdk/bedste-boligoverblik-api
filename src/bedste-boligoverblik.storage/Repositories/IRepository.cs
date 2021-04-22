@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Azure;
@@ -11,8 +12,8 @@ namespace bedste_boligoverblik.storage.Repositories
         Response<T> GetByRowKey(string rowKey);
         Task<Response<T>> GetByRowKeyAsync(string rowKey);
 
-        Pageable<T> Query(Expression<Func<T, bool>> filter);
-        AsyncPageable<T> QueryAsync(Expression<Func<T, bool>> filter);
+        IEnumerable<T> Query(Expression<Func<T, bool>> filter);
+        IAsyncEnumerable<T> QueryAsync(Expression<Func<T, bool>> filter);
 
         Response Create(T entity);
         Task<Response> CreateAsync(T entity);

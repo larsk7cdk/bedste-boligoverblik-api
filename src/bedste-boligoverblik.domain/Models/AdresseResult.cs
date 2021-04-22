@@ -18,8 +18,8 @@
         public object Stormodtagerpostnrnavn { get; init; }
         public string Kommunekode { get; init; }
         public string Adgangsadresseid { get; init; }
-        public float X { get; init; }
-        public float Y { get; init; }
+        public double X { get; init; }
+        public double Y { get; init; }
         public string Href { get; init; }
         public string Betegnelse { get; init; }
     }

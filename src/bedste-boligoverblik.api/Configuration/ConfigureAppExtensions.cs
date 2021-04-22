@@ -10,9 +10,9 @@ namespace bedste_boligoverblik.api.Configuration
     {
         public static void ConfigureApp(this IApplicationBuilder app, IWebHostEnvironment env)
         {
-            //var cultureInfo = new CultureInfo("da-DK");
-            //CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
-            //CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+            var cultureInfo = new CultureInfo("da-DK");
+            CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+            CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
             if (env.IsDevelopment())
             {

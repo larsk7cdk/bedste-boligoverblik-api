@@ -32,9 +32,14 @@ namespace bedste_boligoverblik.proxy.Proxies
             var result = await _httpClientHelper.GetAsync(url.ToString());
             //var result = await File.ReadAllTextAsync("d:\\temp\\adresseMock.json");
 
-            return !string.IsNullOrEmpty(result)
-                ? JsonConvert.DeserializeObject<List<AdresseProxyResponse>>(result)!.First()
-                : null;
+            try
+            {
+                return JsonConvert.DeserializeObject<List<AdresseProxyResponse>>(result)!.First();
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }

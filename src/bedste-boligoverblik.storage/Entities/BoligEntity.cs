@@ -10,8 +10,8 @@ namespace bedste_boligoverblik.storage.Entities
         public string Vejnavn { get; init; }
         public string Husnummer { get; init; }
         public int Postnummer { get; init; }
-        public float X { get; set; }
-        public float Y { get; set; }
+        public double X { get; set; }
+        public double Y { get; set; }
 
         public string Adresse { get; set; }
 

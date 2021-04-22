@@ -14,7 +14,7 @@ namespace bedste_boligoverblik.domain.Facades
             _repository = repository;
         }
 
-        public AsyncPageable<LaanberegningEntity> GetByBoligKeyAsync(string boligKey) => _repository.QueryAsync(entity => entity.BoligKey == boligKey);
+        // public AsyncPageable<LaanberegningEntity> GetByBoligKeyAsync(string boligKey) => _repository.QueryAsync(entity => entity.BoligKey == boligKey);
 
         public Task<Response<LaanberegningEntity>> GetByRowKeyAsync(string rowKey) => _repository.GetByRowKeyAsync(rowKey);
 
