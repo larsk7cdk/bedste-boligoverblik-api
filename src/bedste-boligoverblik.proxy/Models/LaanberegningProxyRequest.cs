@@ -1,6 +1,6 @@
 ﻿namespace bedste_boligoverblik.proxy.Models
 {
-    public class BeregnProxyRequest
+    public class LaanberegningProxyRequest
     {
         public string Produkt { get; set; }
         public string Pris { get; set; }

@@ -1,4 +1,4 @@
-﻿namespace bedste_boligoverblik.domain.Models.Laan
+﻿namespace bedste_boligoverblik.domain.Models.JyskeBank
 {
     public class Betaling
     {

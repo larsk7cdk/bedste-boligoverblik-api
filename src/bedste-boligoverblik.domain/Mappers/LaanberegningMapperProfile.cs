@@ -4,11 +4,11 @@ using bedste_boligoverblik.proxy.Models;
 
 namespace bedste_boligoverblik.domain.Mappers
 {
-    public class BeregnMapperProfile : Profile
+    public class LaanberegningMapperProfile : Profile
     {
-        public BeregnMapperProfile()
+        public LaanberegningMapperProfile()
         {
-            CreateMap<BeregnQuery, BeregnProxyRequest>()
+            CreateMap<LaanberegningQuery, LaanberegningProxyRequest>()
                 .ForMember(
                     dest => dest.BoligType,
                     opt => opt.MapFrom(src => "Hus"));

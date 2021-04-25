@@ -8,12 +8,12 @@ namespace bedste_boligoverblik.domain.Configuration
     {
         public static void Configure(IServiceCollection services)
         {
-            services.AddAutoMapper(typeof(AdresseMapperProfile), typeof(BeregnMapperProfile));
-            services.AddSingleton<IBeregnMapper, BeregnMapper>();
+            services.AddAutoMapper(typeof(AdresseMapperProfile), typeof(LaanberegningMapperProfile));
+            services.AddSingleton<ILaanberegningMapper, LaanberegningMapper>();
 
             services.AddSingleton<IAdresseFacade, AdresseFacade>();
             services.AddSingleton<IBoligFacade, BoligFacade>();
-            services.AddSingleton<IBeregnFacade, BeregnFacade>();
+            services.AddSingleton<ILaanberegningFacade, LaanberegningFacade>();
             services.AddSingleton<ILaanProduktFacade, LaanProduktFacade>();
             services.AddSingleton<ILaanFacade, LaanFacade>();
         }

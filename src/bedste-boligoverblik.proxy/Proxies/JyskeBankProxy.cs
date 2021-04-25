@@ -15,7 +15,7 @@ namespace bedste_boligoverblik.proxy.Proxies
             _httpClientHelper = httpClientHelper;
         }
 
-        public async Task<BeregnProxyResponse> BeregnPris(BeregnProxyRequest request
+        public async Task<LaanberegningJyskeBankProxyResponse> BeregnPris(LaanberegningProxyRequest request
         )
         {
             var url = new StringBuilder();
@@ -33,7 +33,7 @@ namespace bedste_boligoverblik.proxy.Proxies
             var result = await _httpClientHelper.GetAsync(url.ToString());
             //var result = await File.ReadAllTextAsync("d:\\temp\\response.json");
 
-            return JsonConvert.DeserializeObject<BeregnProxyResponse>(result);
+            return JsonConvert.DeserializeObject<LaanberegningJyskeBankProxyResponse>(result);
         }
     }
 }

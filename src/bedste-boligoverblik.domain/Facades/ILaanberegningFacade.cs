@@ -3,8 +3,8 @@ using bedste_boligoverblik.domain.Models;
 
 namespace bedste_boligoverblik.domain.Facades
 {
-    public interface IBeregnFacade
+    public interface ILaanberegningFacade
     {
-        Task<BeregnResult> Beregn(BeregnQuery query);
+        Task<LaanberegningResult> JyskeBankBeregn(LaanberegningQuery query);
     }
 }

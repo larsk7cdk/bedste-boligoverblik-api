@@ -1,4 +1,4 @@
-﻿namespace bedste_boligoverblik.proxy.Models
+﻿namespace bedste_boligoverblik.proxy.Models.JyskeBank
 {
     public class Loan
     {

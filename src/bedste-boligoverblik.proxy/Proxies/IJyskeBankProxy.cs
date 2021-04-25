@@ -5,6 +5,6 @@ namespace bedste_boligoverblik.proxy.Proxies
 {
     public interface IJyskeBankProxy
     {
-        Task<BeregnProxyResponse> BeregnPris(BeregnProxyRequest request);
+        Task<LaanberegningJyskeBankProxyResponse> BeregnPris(LaanberegningProxyRequest request);
     }
 }

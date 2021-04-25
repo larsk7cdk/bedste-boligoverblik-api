@@ -1,21 +1,21 @@
 ﻿using System.Linq;
 using bedste_boligoverblik.core.Extensions;
 using bedste_boligoverblik.domain.Models;
-using bedste_boligoverblik.domain.Models.Laan;
+using bedste_boligoverblik.domain.Models.JyskeBank;
 using bedste_boligoverblik.proxy.Models;
 
 namespace bedste_boligoverblik.domain.Mappers
 {
-    public class BeregnMapper : IBeregnMapper
+    public class LaanberegningMapper : ILaanberegningMapper
     {
-        public BeregnResult MapToResult(BeregnProxyResponse proxyResponse)
+        public LaanberegningResult MapToResultFromJyskeBank(LaanberegningJyskeBankProxyResponse proxyResponse)
         {
             var realkreditlaan = proxyResponse.Calculations.First().Loans.First();
             var banklaan = proxyResponse.Calculations.First().Loans.Length > 1
                 ? proxyResponse.Calculations.First().Loans?[1]
                 : null;
 
-            return new BeregnResult
+            return new LaanberegningResult
             {
                 Realkreditlaan = new Realkreditlaan
                 {

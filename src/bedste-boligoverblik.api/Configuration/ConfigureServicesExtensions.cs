@@ -1,5 +1,7 @@
 ﻿using bedste_boligoverblik.api.Mappers;
 using Microsoft.Extensions.DependencyInjection;
+using AdresseMapperProfile = bedste_boligoverblik.api.Mappers.AdresseMapperProfile;
+using LaanberegningMapperProfile = bedste_boligoverblik.domain.Mappers.LaanberegningMapperProfile;
 
 namespace bedste_boligoverblik.api.Configuration
 {
@@ -11,7 +13,7 @@ namespace bedste_boligoverblik.api.Configuration
 
             services.AddAutoMapper(
                 typeof(AdresseMapperProfile),
-                typeof(BeregnMapperProfile),
+                typeof(LaanberegningMapperProfile),
                 typeof(BoligMapperProfile),
                 typeof(LaanMapperProfile));
 

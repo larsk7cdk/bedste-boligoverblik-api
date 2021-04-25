@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace bedste_boligoverblik.api.Controllers
 {
+    /// <summary>
+    ///     Bolig
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Consumes(MediaTypeNames.Application.Json)]

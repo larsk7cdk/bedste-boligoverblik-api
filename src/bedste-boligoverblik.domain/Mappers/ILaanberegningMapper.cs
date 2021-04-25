@@ -3,8 +3,8 @@ using bedste_boligoverblik.proxy.Models;
 
 namespace bedste_boligoverblik.domain.Mappers
 {
-    public interface IBeregnMapper
+    public interface ILaanberegningMapper
     {
-        BeregnResult MapToResult(BeregnProxyResponse proxyResponse);
+        LaanberegningResult MapToResultFromJyskeBank(LaanberegningJyskeBankProxyResponse proxyResponse);
     }
 }

@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace bedste_boligoverblik.api.Controllers
 {
+    /// <summary>
+    ///     Adresser fra DAWA
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Consumes(MediaTypeNames.Application.Json)]
