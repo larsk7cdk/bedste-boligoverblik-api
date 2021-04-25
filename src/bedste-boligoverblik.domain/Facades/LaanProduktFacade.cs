@@ -2,7 +2,7 @@
 
 namespace bedste_boligoverblik.domain.Facades
 {
-    public class LaanProdukterFacade : ILaanProdukterFacade
+    public class LaanProduktFacade : ILaanProduktFacade
     {
         public IEnumerable<KeyValuePair<string, string>> GetLaanProdukter()
         {

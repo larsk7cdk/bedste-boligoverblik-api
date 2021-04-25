@@ -5,22 +5,26 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace bedste_boligoverblik.api.Controllers
 {
+    /// <summary>
+    ///     Lånprodukt
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces(MediaTypeNames.Application.Json)]
-    public class ProduktController : ControllerBase
+    public class LaanProduktController : ControllerBase
     {
         /// <summary>
         ///     Henter lånprodukter fra Jyske Bank
         /// </summary>
         [HttpGet]
+        [Route("jyskebank")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public LaanProdukterResponse Get([FromServices] ILaanProdukterFacade laanProdukterFacade)
+        public LaanProduktResponse Get([FromServices] ILaanProduktFacade laanProduktFacade)
         {
             return new()
             {
-                LaanProdukter = laanProdukterFacade.GetLaanProdukter()
+                LaanProdukter = laanProduktFacade.GetLaanProdukter()
             };
         }
     }

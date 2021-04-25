@@ -14,7 +14,7 @@ namespace bedste_boligoverblik.domain.Configuration
             services.AddSingleton<IAdresseFacade, AdresseFacade>();
             services.AddSingleton<IBoligFacade, BoligFacade>();
             services.AddSingleton<IBeregnFacade, BeregnFacade>();
-            services.AddSingleton<ILaanProdukterFacade, LaanProdukterFacade>();
+            services.AddSingleton<ILaanProduktFacade, LaanProduktFacade>();
             services.AddSingleton<ILaanFacade, LaanFacade>();
         }
     }
