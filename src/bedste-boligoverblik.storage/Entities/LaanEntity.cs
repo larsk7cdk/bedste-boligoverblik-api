@@ -4,7 +4,7 @@ using Azure.Data.Tables;
 
 namespace bedste_boligoverblik.storage.Entities
 {
-    public class LaanberegningEntity : ITableEntity
+    public class LaanEntity : ITableEntity
     {
         public string BoligKey { get; init; }
         public string Produkt { get; init; }
@@ -14,7 +14,7 @@ namespace bedste_boligoverblik.storage.Entities
         public int Afdragsfrihed { get; init; }
         public int LoebetidBank { get; init; }
 
-        public string PartitionKey { get; set; } = "laanberegning";
+        public string PartitionKey { get; set; } = "laan";
         public string RowKey { get; set; }
         public DateTimeOffset? Timestamp { get; set; }
         public ETag ETag { get; set; }

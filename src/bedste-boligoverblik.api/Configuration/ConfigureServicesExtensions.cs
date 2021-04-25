@@ -13,7 +13,7 @@ namespace bedste_boligoverblik.api.Configuration
                 typeof(AdresseMapperProfile),
                 typeof(BeregnMapperProfile),
                 typeof(BoligMapperProfile),
-                typeof(LaanberegningMapperProfile));
+                typeof(LaanMapperProfile));
 
             services.AddCors();
 

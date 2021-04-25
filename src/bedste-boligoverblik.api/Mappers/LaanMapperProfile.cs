@@ -5,14 +5,14 @@ using bedste_boligoverblik.storage.Entities;
 
 namespace bedste_boligoverblik.api.Mappers
 {
-    public class LaanberegningMapperProfile : Profile
+    public class LaanMapperProfile : Profile
     {
-        public LaanberegningMapperProfile()
+        public LaanMapperProfile()
         {
-            CreateMap<LaanberegningRequest, LaanberegningEntity>().ForMember(dest => dest.RowKey, opt =>
+            CreateMap<LaanRequest, LaanEntity>().ForMember(dest => dest.RowKey, opt =>
                 opt.MapFrom(src => Guid.NewGuid().ToString()));
 
-            CreateMap<LaanberegningUpdateRequest, LaanberegningEntity>()
+            CreateMap<LaanUpdateRequest, LaanEntity>()
                 .ForMember(dest => dest.RowKey, opt =>
                     opt.MapFrom(src => src.RowKey));
         }

@@ -2,7 +2,7 @@
 
 namespace bedste_boligoverblik.api.Models
 {
-    public class LaanberegningRequest
+    public class LaanRequest
     {
         [Required(ErrorMessage = "Bolig key skal være udfyldt!")]
         public string BoligKey { get; init; }
