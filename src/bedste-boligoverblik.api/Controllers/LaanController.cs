@@ -35,7 +35,7 @@ namespace bedste_boligoverblik.api.Controllers
         [HttpGet]
         [Route("{boligKey}/{rowKey}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public async Task<IActionResult> GetByRowKey([FromServices] ILaanFacade facade, string boligKey, string rowKey)
+        public async Task<IActionResult> GetByRowKey([FromServices] ILaanFacade facade, string rowKey)
         {
             var response = await facade.GetByRowKeyAsync(rowKey);
             return Ok(response);
@@ -57,34 +57,7 @@ namespace bedste_boligoverblik.api.Controllers
             return Created(string.Empty, "Lån er oprettet");
         }
 
-
-        /// <summary>
-        ///     Opdater et Lån
-        /// </summary>
-        [HttpPut]
-        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Put))]
-        public async Task<IActionResult> Update(
-            [FromServices] IMapper mapper,
-            [FromServices] ILaanFacade facade,
-            [FromBody] LaanUpdateRequest request)
-        {
-            try
-            {
-                var entity = mapper.Map<LaanEntity>(request);
-                await facade.UpdateAsync(entity);
-
-                return Ok();
-            }
-            catch (RequestFailedException exception)
-            {
-                if (exception.Status == 404)
-                    return NotFound();
-
-                throw;
-            }
-        }
-
-
+        
         /// <summary>
         ///     Slet et Lån
         /// </summary>

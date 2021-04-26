@@ -7,7 +7,7 @@ namespace bedste_boligoverblik.domain.Facades
 {
     public interface ILaanFacade
     {
-        IEnumerable<LaanEntity> GetByBoligKeyAsync(string boligKey);
+        IAsyncEnumerable<LaanEntity> GetByBoligKeyAsync(string boligKey);
         Task<Response<LaanEntity>> GetByRowKeyAsync(string rowKey);
         Task<Response> CreateAsync(LaanEntity entity);
         Task<Response> UpdateAsync(LaanEntity entity);

@@ -2,7 +2,7 @@
 {
     public class LaanberegningProxyRequest
     {
-        public string Produkt { get; set; }
+        public string Laanprodukt { get; set; }
         public string Pris { get; set; }
         public string Udbetaling { get; set; }
         public string BoligType { get; set; }

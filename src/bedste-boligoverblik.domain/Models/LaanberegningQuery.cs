@@ -2,7 +2,7 @@
 {
     public class LaanberegningQuery
     {
-        public string Produkt { get; init; }
+        public string Laanprodukt { get; init; }
         public string Pris { get; init; }
         public string Udbetaling { get; init; }
         public string Loebetid { get; init; }

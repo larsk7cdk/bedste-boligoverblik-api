@@ -28,7 +28,7 @@ namespace bedste_boligoverblik.proxy.Proxies
             url.Append($"&durationInYears={request.Loebetid}");
             url.Append($"&interestOnlyYears={request.Afdragsfrihed}");
             url.Append($"&durationInYearsBankLoan={request.LoebetidBank}");
-            url.Append($"&mortgageProduct={request.Produkt}");
+            url.Append($"&mortgageProduct={request.Laanprodukt}");
 
             var result = await _httpClientHelper.GetAsync(url.ToString());
             //var result = await File.ReadAllTextAsync("d:\\temp\\response.json");

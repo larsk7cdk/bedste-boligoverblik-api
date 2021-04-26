@@ -16,8 +16,7 @@ namespace bedste_boligoverblik.domain.Facades
                 new KeyValuePair<string, string>("REAL_KREDIT_VARIABEL_RENTE_4", "Jyske Rentetilpasning F4"),
                 new KeyValuePair<string, string>("REAL_KREDIT_VARIABEL_RENTE_5", "Jyske Rentetilpasning F5"),
                 new KeyValuePair<string, string>("REAL_KREDIT_VARIABEL_RENTE_6", "Jyske Rentetilpasning F6"),
-                new KeyValuePair<string, string>("REAL_KREDIT_FAST_RENTE", "Jyske Fast Rente"),
-                new KeyValuePair<string, string>("BANKLAAN", "Banklån")
+                new KeyValuePair<string, string>("REAL_KREDIT_FAST_RENTE", "Jyske Fast Rente")
             };
         }
     }

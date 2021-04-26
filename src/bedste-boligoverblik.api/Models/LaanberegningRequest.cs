@@ -4,8 +4,8 @@ namespace bedste_boligoverblik.api.Models
 {
     public class LaanberegningRequest
     {
-        [Required(ErrorMessage = "Produkt skal være udfyldt!")]
-        public string Produkt { get; init; }
+        [Required(ErrorMessage = "Lånprodukt skal være udfyldt!")]
+        public string Laanprodukt { get; init; }
 
         [Required(ErrorMessage = "Pris skal være udfyldt!")]
         public string Pris { get; init; }

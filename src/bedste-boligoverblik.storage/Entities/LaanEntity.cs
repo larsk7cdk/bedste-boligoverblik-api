@@ -7,12 +7,8 @@ namespace bedste_boligoverblik.storage.Entities
     public class LaanEntity : ITableEntity
     {
         public string BoligKey { get; init; }
-        public string Produkt { get; init; }
-        public long Pris { get; init; }
-        public long Udbetaling { get; init; }
-        public int Loebetid { get; init; }
-        public int Afdragsfrihed { get; init; }
-        public int LoebetidBank { get; init; }
+        public string Request { get; init; }
+        public string Result { get; init; }
 
         public string PartitionKey { get; set; } = "laan";
         public string RowKey { get; set; }

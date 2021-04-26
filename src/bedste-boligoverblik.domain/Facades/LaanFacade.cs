@@ -1,9 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Azure;
+﻿using Azure;
 using bedste_boligoverblik.storage.Entities;
 using bedste_boligoverblik.storage.Repositories;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace bedste_boligoverblik.domain.Facades
 {
@@ -16,10 +15,8 @@ namespace bedste_boligoverblik.domain.Facades
             _repository = repository;
         }
 
-        public IEnumerable<LaanEntity> GetByBoligKeyAsync(string boligKey) =>
-            _repository.QueryAsync(entity => entity.BoligKey == boligKey)
-                .ToListAsync().Result
-                .OrderBy(o => o.Produkt);
+        public IAsyncEnumerable<LaanEntity> GetByBoligKeyAsync(string boligKey) =>
+            _repository.QueryAsync(entity => entity.BoligKey == boligKey);
 
         public Task<Response<LaanEntity>> GetByRowKeyAsync(string rowKey) => _repository.GetByRowKeyAsync(rowKey);
 
