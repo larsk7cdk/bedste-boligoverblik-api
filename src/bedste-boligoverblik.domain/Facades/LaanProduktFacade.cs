@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace bedste_boligoverblik.domain.Facades
 {
-    public class LaanProduktFacade : ILaanProduktFacade
+    public class LaanproduktFacade : ILaanproduktFacade
     {
-        public IEnumerable<KeyValuePair<string, string>> GetLaanProdukter()
+        public IEnumerable<KeyValuePair<string, string>> GetLaanprodukter()
         {
             return new[]
             {
@@ -18,6 +19,14 @@ namespace bedste_boligoverblik.domain.Facades
                 new KeyValuePair<string, string>("REAL_KREDIT_VARIABEL_RENTE_6", "Jyske Rentetilpasning F6"),
                 new KeyValuePair<string, string>("REAL_KREDIT_FAST_RENTE", "Jyske Fast Rente")
             };
+        }
+
+        public string GetLaanproduktNavn(string lanproduktKey)
+        {
+            var dictionary = GetLaanprodukter().ToDictionary(x => x.Key);
+            var found = dictionary.TryGetValue(lanproduktKey, out var value);
+
+            return found ? value.Value : string.Empty;
         }
     }
 }

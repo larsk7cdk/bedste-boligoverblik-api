@@ -2,8 +2,9 @@
 
 namespace bedste_boligoverblik.domain.Facades
 {
-    public interface ILaanProduktFacade
+    public interface ILaanproduktFacade
     {
-        IEnumerable<KeyValuePair<string, string>> GetLaanProdukter();
+        IEnumerable<KeyValuePair<string, string>> GetLaanprodukter();
+        string GetLaanproduktNavn(string lanproduktKey);
     }
 }

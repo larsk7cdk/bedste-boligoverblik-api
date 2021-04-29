@@ -20,11 +20,11 @@ namespace bedste_boligoverblik.api.Controllers
         [HttpGet]
         [Route("jyskebank")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
-        public LaanProduktResponse Get([FromServices] ILaanProduktFacade laanProduktFacade)
+        public LaanProduktResponse Get([FromServices] ILaanproduktFacade laanproduktFacade)
         {
             return new()
             {
-                LaanProdukter = laanProduktFacade.GetLaanProdukter()
+                LaanProdukter = laanproduktFacade.GetLaanprodukter()
             };
         }
     }

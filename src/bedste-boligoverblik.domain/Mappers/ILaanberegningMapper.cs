@@ -5,6 +5,6 @@ namespace bedste_boligoverblik.domain.Mappers
 {
     public interface ILaanberegningMapper
     {
-        LaanberegningResult MapToResultFromJyskeBank(LaanberegningJyskeBankProxyResponse proxyResponse);
+        LaanberegningResult MapToResultFromJyskeBank(LaanberegningProxyRequest proxyRequest, LaanberegningJyskeBankProxyResponse proxyResponse);
     }
 }

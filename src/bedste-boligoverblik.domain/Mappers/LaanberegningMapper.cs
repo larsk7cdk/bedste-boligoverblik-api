@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using bedste_boligoverblik.core.Extensions;
+using bedste_boligoverblik.domain.Facades;
 using bedste_boligoverblik.domain.Models;
 using bedste_boligoverblik.domain.Models.JyskeBank;
 using bedste_boligoverblik.proxy.Models;
@@ -8,7 +9,15 @@ namespace bedste_boligoverblik.domain.Mappers
 {
     public class LaanberegningMapper : ILaanberegningMapper
     {
-        public LaanberegningResult MapToResultFromJyskeBank(LaanberegningJyskeBankProxyResponse proxyResponse)
+        private readonly ILaanproduktFacade _laanproduktFacade;
+
+        public LaanberegningMapper(ILaanproduktFacade laanproduktFacade)
+        {
+            _laanproduktFacade = laanproduktFacade;
+        }
+
+
+        public LaanberegningResult MapToResultFromJyskeBank(LaanberegningProxyRequest proxyRequest, LaanberegningJyskeBankProxyResponse proxyResponse)
         {
             var realkreditlaan = proxyResponse.Calculations.First().Loans.First();
             var banklaan = proxyResponse.Calculations.First().Loans.Length > 1
@@ -17,6 +26,15 @@ namespace bedste_boligoverblik.domain.Mappers
 
             return new LaanberegningResult
             {
+                LaanproduktNavn = _laanproduktFacade.GetLaanproduktNavn(proxyRequest.Laanprodukt),
+                SummeringLaan = new SummeringLaan
+                {
+                    MdlYdelseFoerSkat = realkreditlaan.MonthlyPaymentBeforeTax.ToDecimal() + (banklaan?.MonthlyPaymentBeforeTax.ToDecimal() ?? 0),
+                    MdlYdelseEfterSkat = realkreditlaan.MonthlyPaymentAfterTax.ToDecimal() + (banklaan?.MonthlyPaymentAfterTax.ToDecimal() ?? 0),
+                    MdlAfdrag = realkreditlaan.LoanPrincipal.ToDecimal() + (banklaan?.LoanPrincipal.ToDecimal() ?? 0),
+                    Restgaeld = realkreditlaan.MonthlyPrincipalPayment.ToDecimal() + (banklaan?.MonthlyPrincipalPayment.ToDecimal() ?? 0),
+                    Tilbagebetaling = realkreditlaan.TotalRepayment.ToDecimal() + (banklaan?.TotalRepayment.ToDecimal() ?? 0),
+                },
                 Realkreditlaan = new Realkreditlaan
                 {
                     Restgaeld = realkreditlaan.LoanPrincipal.ToDecimal(),
@@ -63,39 +81,6 @@ namespace bedste_boligoverblik.domain.Mappers
                         })
                     }
             };
-        }
-
-
-        public static string MapProduktNavn(string requestProdukt, string product)
-        {
-            if (product.ToUpper().Equals("JYSKE_RENTELOFT_KORT"))
-                return "Jyske Renteloft CIBOR3 (1,00%)";
-
-            if (product.ToUpper().Equals("JYSKE_RENTELOFT_LANG"))
-                return "Jyske Renteloft CIBOR3 (1,50%)";
-
-            if (product.ToUpper().Equals("REAL_KREDIT_RTL_100"))
-                return "Jyske Rentetilpasning F1";
-
-            if (product.ToUpper().StartsWith("REAL_KREDIT_VARIABEL_RENTE"))
-            {
-                var period = requestProdukt.Last();
-                return $"Jyske Rentetilpasning F{period}";
-            }
-
-            if (product.ToUpper().Equals("REAL_KREDIT_FAST_RENTE"))
-                return "Jyske Fast Rente";
-
-            return "Banklån";
-        }
-
-        public static string MapRenteType(string product)
-        {
-            if (!product.ToUpper().Equals("REAL_KREDIT_FAST_RENTE"))
-                return "VARIABEL";
-
-            //  "REAL_KREDIT_FAST_RENTE"
-            return "FAST";
         }
     }
 }

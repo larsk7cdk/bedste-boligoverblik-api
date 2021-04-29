@@ -9,11 +9,12 @@ namespace bedste_boligoverblik.domain.Facades
 {
     public class LaanberegningFacade : ILaanberegningFacade
     {
-        private readonly ILaanberegningMapper _laanberegningMapper;
         private readonly IJyskeBankProxy _jyskeBankProxy;
+        private readonly ILaanberegningMapper _laanberegningMapper;
         private readonly IMapper _mapper;
 
-        public LaanberegningFacade(IMapper mapper, ILaanberegningMapper laanberegningMapper, IJyskeBankProxy jyskeBankProxy)
+        public LaanberegningFacade(IMapper mapper, ILaanberegningMapper laanberegningMapper,
+            IJyskeBankProxy jyskeBankProxy)
         {
             _mapper = mapper;
             _laanberegningMapper = laanberegningMapper;
@@ -22,9 +23,9 @@ namespace bedste_boligoverblik.domain.Facades
 
         public async Task<LaanberegningResult> JyskeBankBeregn(LaanberegningQuery query)
         {
-            var proxyRequest = _mapper.Map<LaanberegningProxyRequest>(query);
-            var response = await _jyskeBankProxy.BeregnPris(proxyRequest);
-            var result = _laanberegningMapper.MapToResultFromJyskeBank(response);
+            var request = _mapper.Map<LaanberegningProxyRequest>(query);
+            var response = await _jyskeBankProxy.BeregnPris(request);
+            var result = _laanberegningMapper.MapToResultFromJyskeBank(request, response);
 
             return result;
         }

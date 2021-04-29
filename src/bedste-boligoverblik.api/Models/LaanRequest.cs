@@ -8,9 +8,9 @@ namespace bedste_boligoverblik.api.Models
         public string BoligKey { get; init; }
 
         [Required(ErrorMessage = "Lån request skal være udfyldt!")]
-        public string Request { get; set; }
+        public string Request { get; init; }
 
         [Required(ErrorMessage = "Resultat skal være udfyldt!")]
-        public string Result { get; set; }
+        public string Result { get; init; }
     }
 }
