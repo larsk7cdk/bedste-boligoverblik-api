@@ -7,6 +7,6 @@ namespace bedste_boligoverblik.domain.Models
         public string LaanproduktNavn { get; init; }
         public Realkreditlaan Realkreditlaan { get; init; }
         public Banklaan Banklaan { get; init; }
-        public SummeringLaan SummeringLaan { get; set; }
+        public SummeringLaan SummeringLaan { get; init; }
     }
 }
