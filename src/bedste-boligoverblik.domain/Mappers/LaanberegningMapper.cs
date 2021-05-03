@@ -31,8 +31,8 @@ namespace bedste_boligoverblik.domain.Mappers
                 {
                     MdlYdelseFoerSkat = realkreditlaan.MonthlyPaymentBeforeTax.ToDecimal() + (banklaan?.MonthlyPaymentBeforeTax.ToDecimal() ?? 0),
                     MdlYdelseEfterSkat = realkreditlaan.MonthlyPaymentAfterTax.ToDecimal() + (banklaan?.MonthlyPaymentAfterTax.ToDecimal() ?? 0),
-                    MdlAfdrag = realkreditlaan.LoanPrincipal.ToDecimal() + (banklaan?.LoanPrincipal.ToDecimal() ?? 0),
-                    Restgaeld = realkreditlaan.MonthlyPrincipalPayment.ToDecimal() + (banklaan?.MonthlyPrincipalPayment.ToDecimal() ?? 0),
+                    MdlAfdrag = realkreditlaan.MonthlyPrincipalPayment.ToDecimal() + (banklaan?.MonthlyPrincipalPayment.ToDecimal() ?? 0),
+                    Restgaeld = realkreditlaan.LoanPrincipal.ToDecimal() + (banklaan?.LoanPrincipal.ToDecimal() ?? 0),
                     Tilbagebetaling = realkreditlaan.TotalRepayment.ToDecimal() + (banklaan?.TotalRepayment.ToDecimal() ?? 0),
                 },
                 Realkreditlaan = new Realkreditlaan
