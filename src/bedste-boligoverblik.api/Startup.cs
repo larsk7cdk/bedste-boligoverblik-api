@@ -26,12 +26,7 @@ namespace bedste_boligoverblik.api
         {
             // Adds Microsoft Identity platform (AAD v2.0) support to protect this Api
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApi(options =>
-                    {
-                        Configuration.Bind("AzureAdB2C", options);
-                        
-                        options.TokenValidationParameters.NameClaimType = "name";
-                    },
+                .AddMicrosoftIdentityWebApi(options => { Configuration.Bind("AzureAdB2C", options); },
                     options => { Configuration.Bind("AzureAdB2C", options); });
 
             ConfigureCore.Configure(services);
