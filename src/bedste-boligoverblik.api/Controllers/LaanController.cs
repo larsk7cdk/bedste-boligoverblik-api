@@ -5,6 +5,7 @@ using Azure;
 using bedste_boligoverblik.api.Models;
 using bedste_boligoverblik.domain.Facades;
 using bedste_boligoverblik.storage.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace bedste_boligoverblik.api.Controllers
@@ -14,6 +15,7 @@ namespace bedste_boligoverblik.api.Controllers
     /// </summary>
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     [Consumes(MediaTypeNames.Application.Json)]
     [Produces(MediaTypeNames.Application.Json)]
     public class LaanController : ControllerBase

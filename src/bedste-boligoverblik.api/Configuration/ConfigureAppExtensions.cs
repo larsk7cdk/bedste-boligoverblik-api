@@ -36,6 +36,7 @@ namespace bedste_boligoverblik.api.Configuration
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseSerilogRequestLogging();

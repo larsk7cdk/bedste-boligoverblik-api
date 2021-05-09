@@ -7,7 +7,7 @@ using Microsoft.OpenApi.Models;
 
 namespace bedste_boligoverblik.api.Configuration
 {
-    public static class ConfigureSwagger
+    public static class ConfigureSwaggerExtensions
     {
         public static void ConfigureSwaggerServices(this IServiceCollection services)
         {

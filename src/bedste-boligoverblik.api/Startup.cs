@@ -24,11 +24,7 @@ namespace bedste_boligoverblik.api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Adds Microsoft Identity platform (AAD v2.0) support to protect this Api
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddMicrosoftIdentityWebApi(options => { Configuration.Bind("AzureAdB2C", options); },
-                    options => { Configuration.Bind("AzureAdB2C", options); });
-
+            services.ConfigureAzureB2C(Configuration);
             ConfigureCore.Configure(services);
             ConfigureStorage.Configure(services, Configuration);
             ConfigureDomain.Configure(services);
