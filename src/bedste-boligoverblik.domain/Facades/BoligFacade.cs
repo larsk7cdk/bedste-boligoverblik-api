@@ -29,8 +29,8 @@ namespace bedste_boligoverblik.domain.Facades
             var adresseQuery = new AdresseQuery()
             {
                 Vejnavn = entity.Vejnavn,
-                Husnummer = entity.Husnummer,
-                Postnummer = entity.Postnummer
+                Husnr = entity.Husnummer,
+                Postnr = entity.Postnummer
             };
 
             var adresse = await _adresseFacade.Soeg(adresseQuery);
