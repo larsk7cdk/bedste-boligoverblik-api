@@ -1,3 +1,3 @@
-testhttps://jkdev.me/asp-net-core-serilog/
+# Bedste Boligoverblik
 
-https://code-maze.com/aspnetcore-webapi-best-practices/#controllers
+Dette er et Microsft .Net WEB API til Bedste Boligoverblik
